@@ -20,7 +20,7 @@ export default component$(() => {
       <div class="section">
         <div class="container center">
           <h3>
-            You can <b>count</b> on me
+            You yolo man <b>count</b> on me
           </h3>
           <Counter />
         </div>
