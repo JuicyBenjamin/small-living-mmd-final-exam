@@ -10,7 +10,7 @@ export default component$(() => {
   return (
     <>
       <Hero />
-      <h1>Hello im here</h1>
+      <h1>Hello im here, its emma</h1>
 
       <div class="section bright">
         <div class="container center">
