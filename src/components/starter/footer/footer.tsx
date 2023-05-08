@@ -8,7 +8,7 @@ export default component$(() => {
   return (
     <footer>
       <a href="https://www.builder.io/" target="_blank" class={styles.anchor}>
-        Made with ♡ by Builder.io
+        Made by fire squad
         <span class={styles.spacer}>|</span>
         <span>{serverTime.value.date}</span>
       </a>
