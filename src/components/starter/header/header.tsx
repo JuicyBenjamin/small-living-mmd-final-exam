@@ -2,6 +2,16 @@ import { component$ } from '@builder.io/qwik';
 import { QwikLogo } from '../icons/qwik';
 import styles from './header.module.css';
 
+//* Index page with the newest articles and CTAS with videos and contents we make + promoting SoMe accounts
+//* Articles page
+//! Shop page
+//* About page
+//* Contact page - sending your ideas and connecting with benjamin (form?) - community stuff
+//* Cookies and policies page
+
+
+
+
 export default component$(() => {
   return (
     <header class={styles.header}>
@@ -12,18 +22,23 @@ export default component$(() => {
       </div>
       <ul>
         <li>
-          <a href="#" target="_blank">
-            Docs
+          <a href="/">
+            Home
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Examples
+          <a href="/articles">
+            Articles
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
-            Tutorials
+          <a href="/about">
+            About
+          </a>
+        </li>
+        <li>
+          <a href="/contact">
+            Contact
           </a>
         </li>
       </ul>
