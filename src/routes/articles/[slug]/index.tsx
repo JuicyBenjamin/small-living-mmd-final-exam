@@ -23,6 +23,7 @@ interface rmCharacter {
   created: string
 }
 
+
 export const useCharacterLoader = routeLoader$<rmCharacter>(async (requestEvent) => {
   // This code runs only on the server, after every navigation
   const res = await fetch(`https://rickandmortyapi.com/api/character/${requestEvent.params.slug}`);
@@ -30,8 +31,9 @@ export const useCharacterLoader = routeLoader$<rmCharacter>(async (requestEvent)
   return character as rmCharacter;
 });
 
+
 export default component$ (() => {
-  const character = useCharacterLoader()
+  const character = useCharacterLoader();
   return <div>
     <h1>Article: {character.value.name}</h1>
     <p>Location: {character.value.location.name}</p>
@@ -40,14 +42,24 @@ export default component$ (() => {
   </div>
   })
 
-  export const head: DocumentHead = {
-    //**  title: `${character.value.name} Small-living.dk`,
-    //???? Can it be dynamic??
-    meta: [
-      {
-        name: 'description',
-        content: 'Small living is a website about how and why to live small.',
-      },
-    ],
+
+  // metadata is dynamic now
+
+  export const head: DocumentHead = ({resolveValue, params}) => {
+    const metaCharacter = resolveValue(useCharacterLoader);
+
+
+    return {
+      title:`${metaCharacter.name}'s article` ,
+      meta: [
+        {
+          name: 'description',
+          // content: metaCharacter.meta.desc,
+        },
+        {
+          name: 'id',
+          content: params.slug,
+        },
+      ],
+    };
   };
-  
