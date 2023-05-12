@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <ul class={"flex flex-row justify-between py-12 px-4"}>
+    <ul class={"flex flex-row justify-center gap-12 py-12"}>
       <li>
         <a class={"uppercase"} href="/">Home</a>
       </li>
