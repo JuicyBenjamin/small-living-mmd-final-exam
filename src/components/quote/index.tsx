@@ -8,7 +8,7 @@ export default component$(() => {
 
   console.log(chosenQuote);
   return (
-    <section class="bg-yellow-950 text-white p-10 flex justify-center my-12">
+    <section class="bg-violet-400 text-white p-10 flex justify-center my-12">
       <div class="flex flex-col max-w-[50ch]">
         <div>“ {homeContent.quote[chosenQuote].quote} ”</div>
         <span class="uppercase self-end">- {homeContent.quote[chosenQuote].author}</span>
