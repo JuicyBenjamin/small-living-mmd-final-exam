@@ -7,7 +7,6 @@ export default component$(() => {
   navigationContent.map((link) => {console.log(link.name)});
 
   
-  // console.log("__",navigationContent)
   return (
     <ul class={"flex flex-row justify-center gap-12 py-12"}>
       {navigationContent.map((link, key) => (
@@ -22,18 +21,6 @@ export default component$(() => {
         </li>
         )
       )}
-      {/* <li>
-        <a class={"uppercase"} href="/">Home</a>
-      </li>
-      <li>
-        <a class={"uppercase"} href="/articles">Articles</a>
-      </li>
-      <li>
-        <a class={"uppercase"}href="/about">About</a>
-      </li>
-      <li>
-        <a class={"uppercase"} href="/contact">Contact</a>
-      </li> */}
     </ul>
   );
 });

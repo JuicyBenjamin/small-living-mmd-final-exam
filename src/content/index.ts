@@ -167,7 +167,7 @@ export const homeContent = {
   },
   quote: {
     quote:
-      "“The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less.”",
+      "The secret of happiness, you see, is not found in seeking more, but in developing the capacity to enjoy less.",
     author: "Socrates",
   },
   videos: [
