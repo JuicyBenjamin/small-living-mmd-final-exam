@@ -31,9 +31,9 @@ export default component$(() => {
           <label for="newsletter" class="max-w-[40ch] text-center">
             {constantContent.footer.middle.newsletter.text}
           </label>
-          <div class="flex justify-center">
+          <div class="flex justify-center mt-4">
             <input
-              class="text-white pt-4 my-4 border-white border-b-[1px] bg-transparent"
+              class="text-white pt-4 border-white border-b-[1px] bg-transparent"
               name={constantContent.footer.middle.newsletter.input.name}
               id={constantContent.footer.middle.newsletter.input.id}
               type="text"
@@ -41,7 +41,7 @@ export default component$(() => {
                 constantContent.footer.middle.newsletter.input.placeholder
               }
             />
-            <button
+            <button class="border-[1px] border-white ml-2 px-[10px] uppercase"
               formAction={
                 constantContent.footer.middle.newsletter.button.action
               }
