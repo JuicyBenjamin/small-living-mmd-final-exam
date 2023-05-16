@@ -44,22 +44,16 @@ export const constantContent = {
       cookies: {
         text: "Cookies and policies",
         href: "#",
-        target: false,
+        target: true
       },
     },
     middle: {
-      logo: {
-        alt: "Small-living.dk logo",
-        url: "./assets/logo/logo.svg",
-        href: "",
-        target: false,
-      },
       newsletter: {
         text: "Subscribe to our newsletter and get your free magazine here!",
         input: {
           type: "email",
-          id: "email",
-          name: "email",
+          id: "newsletter",
+          name: "newsletter",
           placeholder: "your@mail.com",
         },
         button: {

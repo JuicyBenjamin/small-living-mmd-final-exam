@@ -57,18 +57,10 @@ h2 {
   /* color: var(--qwik-dark-purple); */
 }
 
-input[type='text'],
-button {
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  border-radius: 12px;
-  font-size: 1rem;
-  padding: 10px 20px;
-}
 
 button {
   cursor: pointer;
+
 }
 
 button:hover {
@@ -87,14 +79,14 @@ button.gray {
   color: #aaa;
 }
 
-a,
+/* a,
 a:active,
 a:visited,
 a:hover {
   color: black;
   font-weight: 400;
   text-decoration: none;
-}
+} */
 
 /* .section.bright {
   background: white;
