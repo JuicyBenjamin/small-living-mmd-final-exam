@@ -6,7 +6,7 @@ import Navigation from "~/components/navigation/navigation";
 export default component$(() => {
   return (
     <>
-      <header class={"flex flex-col"}>
+      <header class={"flex flex-col bg-green-800 text-white"}>
         <div class={"flex justify-center w-full pt-4"}>
           <a href="/" title="small-living-logo">
             <Logo />
