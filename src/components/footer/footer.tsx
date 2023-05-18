@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import { useServerTimeLoader } from "~/routes/layout";
-import styles from "./footer.module.css";
 import { constantContent } from "~/content";
 import { Logo } from "../icons/logo";
 
@@ -8,7 +7,7 @@ export default component$(() => {
   const serverTime = useServerTimeLoader();
 
   return (
-    <footer class="flex flex-col w-100 pt-20 pb-4 bg-green-800 text-white">
+    <footer class="flex flex-col w-100 pt-20 pb-4 bg-[--accent-green] text-white">
       <div class="grid grid-cols-[1fr_1fr_1fr] pb-10">
         <section class="justify-self-center self-end">
           <p>{constantContent.footer.left.cvr}</p>
@@ -17,7 +16,7 @@ export default component$(() => {
               class="text-white underline"
               href={constantContent.footer.left.cookies.href}
               target={
-                constantContent.footer.left.cookies.target ? "_blank" : null
+                constantContent.footer.left.cookies.target ? "_blank" : ""
               }
             >
               {constantContent.footer.left.cookies.text}

@@ -13,7 +13,7 @@ export default component$(() => {
         <li key={key}>
           <a
             class={"uppercase"}
-            target={link.target ? "blank" : null}
+            target={link.target ? "blank" : ""}
             href={link.href}
           >
             {link.name}
