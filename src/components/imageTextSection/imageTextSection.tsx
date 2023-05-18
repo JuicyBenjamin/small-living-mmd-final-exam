@@ -5,11 +5,11 @@ export default component$(() => {
   return (
     <article class={"py-20"}>
       <div class={"w-full grid grid-cols-[4fr_auto_1fr]"}>
-        <span class={"border-b-2 border-green-900 w-full mb-[2rem]"}></span>
+        <span class={"w-full mb-[2rem]"}></span>
         <h2 class={"border-b-0 font-bold uppercase px-2"}>
           What is Small-living.dk?
         </h2>
-        <span class={"border-b-2 border-green-900 w-full mb-[2rem]"}></span>
+        <span class={"w-full mb-[2rem]"}></span>
       </div>
       <div class={"flex justify-center pt-8 px-16 gap-12"}>
         <section class="px-">
@@ -18,7 +18,7 @@ export default component$(() => {
             width={500}
             aspectRatio={1 / 1}
             alt="Some picture"
-            class={"border-4 border-green-900"}
+            class={""}
           ></Image>
         </section>
         <section>
