@@ -7,6 +7,7 @@ import Header from '~/components/header/header';
 export const useServerTimeLoader = routeLoader$(() => {
   return {
     date: new Date().toISOString(),
+    year : new Date().getFullYear()
   };
 });
 
@@ -17,11 +18,9 @@ export default component$(() => {
         <Header />
         <Slot />
       </main>
-      <div class="section dark">
-        <div class="container">
+
           <Footer />
-        </div>
-      </div>
+
     </div>
   );
 });

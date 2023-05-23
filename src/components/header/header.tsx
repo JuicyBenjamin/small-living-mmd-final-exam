@@ -3,10 +3,11 @@ import { component$ } from "@builder.io/qwik";
 import { Logo } from "../icons/logo";
 import Navigation from "~/components/navigation/navigation";
 
+
 export default component$(() => {
   return (
     <>
-      <header class={"flex flex-col"}>
+      <header class={"flex flex-col bg-[--accent-green] text-white"}>
         <div class={"flex justify-center w-full pt-4"}>
           <a href="/" title="small-living-logo">
             <Logo />
