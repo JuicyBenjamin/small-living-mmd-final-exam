@@ -4,7 +4,7 @@ import Hero from '~/components/hero';
 import ImageTextSection from '~/components/imageTextSection/imageTextSection';
 import LatestArticlesSection from '~/components/latestArticlesSection';
 import Quote from '~/components/quote';
-import VideoSection from '~/components/videoSection';
+import VideoSection from '~/components/videoSection/videoSection';
 
 import type { DocumentHead } from '@builder.io/qwik-city';
 
