@@ -134,7 +134,7 @@ export const homeContent = {
     title: "What is Small-living.dk",
     subtitle: "",
     image: {
-      src: "",
+      src: "https://picsum.photos/500/300",
       alt: "",
     },
     text: [

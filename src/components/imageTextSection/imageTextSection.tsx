@@ -4,7 +4,6 @@ import { Image } from "@unpic/qwik";
 import { homeContent } from "~/content";
 
 // todo
-// * dynamic content
 // * if sentence for types : (if image is on left or right - even vs. odd thing)
 
 export default component$(() => {
@@ -24,9 +23,8 @@ export default component$(() => {
         <section class="px-">
           <Image
             src={content.image.src}
-            width={500}
-            aspectRatio={1 / 1}
-            alt="Some picture"
+            layout="fullWidth"
+            alt={content.image.src}
             class={""}
           ></Image>
         </section>
@@ -39,17 +37,6 @@ export default component$(() => {
               </p>
             );
           })}
-
-          <p class={"max-w-[55ch] pb-4"}>
-            From organization hacks to storage solutions, we have everything you
-            need to create a cozy and comfortable home, including small living
-            in van life.
-          </p>
-          <p class={"max-w-[55ch] pb-4"}>
-            By making the most of your small space, you can reduce your carbon
-            footprint and live a more eco-friendly lifestyle, whether you're
-            living in a tiny house, an apartment, or a van.
-          </p>
         </section>
       </div>
     </article>
