@@ -6,7 +6,7 @@ export default component$(() => {
     <article class={"py-20"}>
       <div class={"w-full grid grid-cols-[4fr_auto_1fr]"}>
         <span class={"w-full mb-[3.5rem] border-b-4 border-[--accent-green]"}></span>
-        <h2 class={"border-b-0 font-bold uppercase px-2"}>
+        <h2 class={"border-b-0 uppercase px-2"}>
           What is Small-living.dk?
         </h2>
         <span class={"w-full mb-[3.5rem] border-b-4 border-[--accent-green]"}></span>
