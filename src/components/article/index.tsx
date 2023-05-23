@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 import { ArticlesContent } from "~/content";
 import { Image } from "@unpic/qwik";
 import Hashtags from "../hashtags";
+import Button from "../button";
 
 export default component$(() => {
   const articleContent = ArticlesContent[0];
@@ -47,6 +48,8 @@ export default component$(() => {
       </section>
       {/* related articles carousel component */}
       <section class={"flex justify-end pb-12"}>
+        {articleContent.button.type != null ? <Button type={articleContent.button.type}></Button> : null}
+
         <button
           class={"hover:bg-[--accent-green] p-2 "}
           onClick$={() => scrollTo(0, 0)}
