@@ -1,16 +1,17 @@
 import { component$ } from "@builder.io/qwik";
 import { ArticlesContent } from "~/content";
 import { Image } from "@unpic/qwik";
+import Hashtags from "../hashtags";
 
 export default component$(() => {
   const articleContent = ArticlesContent[0];
   console.log(articleContent);
 
   return (
-    <article class={"mx-[10rem]"}>
+    <article class={"mx-[20rem]"}>
       <h2 class={"text-center pb-24 pt-16"}>{articleContent.title}</h2>
       {/* next and previous articel image buttons component here */}
-      {/* tags line component here */}
+      <Hashtags></Hashtags>
       <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
           <div>{articleContent.date}</div>

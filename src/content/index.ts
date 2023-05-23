@@ -230,6 +230,7 @@ export const ArticlesContent = [
       {
         name: "apartment",
         icon: "",
+        url : "/apartment"
       },
       {
         name: "furniture",
