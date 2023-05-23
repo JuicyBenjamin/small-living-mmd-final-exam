@@ -3,8 +3,6 @@ import { Image } from "@unpic/qwik";
 
 import { homeContent } from "~/content";
 
-// todo
-// * if sentence for types : (if image is on left or right - even vs. odd thing)
 
 export default component$(() => {
   const content = homeContent.imageSection;
@@ -20,24 +18,49 @@ export default component$(() => {
         ></span>
       </div>
       <div class={"flex justify-center pt-8 px-16 gap-12"}>
-        <section class="px-">
-          <Image
-            src={content.image.src}
-            layout="fullWidth"
-            alt={content.image.src}
-            class={""}
-          ></Image>
-        </section>
-        <section>
-          {content.text.map((text, key) => {
-            if (text == null) return;
-            return (
-              <p key={key} class={"max-w-[55ch] pb-4"}>
-                {text}
-              </p>
-            );
-          })}
-        </section>
+        {content.placement == "left" ? (
+          <>
+            <section class="px-">
+              <Image
+                src={content.image.src}
+                layout="fullWidth"
+                alt={content.image.src}
+                class={""}
+              ></Image>
+            </section>
+            <section>
+              {content.text.map((text, key) => {
+                if (text == null) return;
+                return (
+                  <p key={key} class={"max-w-[55ch] pb-4"}>
+                    {text}
+                  </p>
+                );
+              })}
+            </section>
+          </>
+        ) : (
+          <>
+            <section>
+              {content.text.map((text, key) => {
+                if (text == null) return;
+                return (
+                  <p key={key} class={"max-w-[55ch] pb-4"}>
+                    {text}
+                  </p>
+                );
+              })}
+            </section>
+            <section class="px-">
+              <Image
+                src={content.image.src}
+                layout="fullWidth"
+                alt={content.image.src}
+                class={""}
+              ></Image>
+            </section>
+          </>
+        )}
       </div>
     </article>
   );

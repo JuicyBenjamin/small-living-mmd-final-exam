@@ -131,6 +131,7 @@ export const homeContent = {
     },
   ],
   imageSection: {
+    placement : "left",
     title: "What is Small-living.dk",
     subtitle: "",
     image: {
@@ -259,6 +260,7 @@ export const ArticlesContent = {
 export const contactContent = {};
 export const aboutContent = {
   about: {
+    placement : "right",
     title: "About the author",
     subtitle: "",
     image: {
@@ -270,6 +272,7 @@ export const aboutContent = {
     ],
   },
   mission: {
+    placement : "left",
     title: "Mission",
     subtitle: "",
     image: {
@@ -281,6 +284,7 @@ export const aboutContent = {
     ],
   },
   vision: {
+    placement : "right",
     title: "Vision",
     subtitle: "",
     image: {
@@ -292,6 +296,7 @@ export const aboutContent = {
     ],
   },
   values: {
+    placement : "left",
     title: "Values",
     subtitle: "",
     image: {
