@@ -1,6 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 
+import 
+
+// todo 
+// * dynamic content
+// * if sentence for types : (if image is on left or right - even vs. odd thing)
+
 export default component$(() => {
   return (
     <article class={"py-20"}>
@@ -12,6 +18,7 @@ export default component$(() => {
         <span class={"border-b-2 border-green-900 w-full mb-4"}></span>
       </div>
       <div class={"flex justify-center pt-8 px-16 gap-12"}>
+        
         <section class="px-">
           <Image
             src="https://picsum.photos/400"
