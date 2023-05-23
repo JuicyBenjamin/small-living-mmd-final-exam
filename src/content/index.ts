@@ -44,7 +44,7 @@ export const constantContent = {
       cookies: {
         text: "Cookies and policies",
         href: "#",
-        target: true
+        target: true,
       },
     },
     middle: {
@@ -134,7 +134,7 @@ export const homeContent = {
     title: "What is Small-living.dk",
     subtitle: "",
     image: {
-      url: "",
+      src: "",
       alt: "",
     },
     text: [
@@ -176,8 +176,7 @@ export const homeContent = {
       author: "Henry David Thoreau",
     },
     {
-      quote:
-        "Poverty is my pride.",
+      quote: "Poverty is my pride.",
       author: "Muhammed",
     },
     {
@@ -191,8 +190,7 @@ export const homeContent = {
       author: "Antoine de Saint-Exupéry",
     },
     {
-      quote:
-        "Live simply so that others may simply live.",
+      quote: "Live simply so that others may simply live.",
       author: "Elizabeth Ann Seton",
     },
     {
@@ -204,8 +202,8 @@ export const homeContent = {
       quote:
         "Small rooms or dwellings discipline the mind, large ones weaken it.",
       author: "Leonardo Da Vinci",
-    }
-//  -
+    },
+    //  -
   ],
 
   videos: [
@@ -259,4 +257,49 @@ export const ArticlesContent = {
 };
 
 export const contactContent = {};
-export const aboutContent = {};
+export const aboutContent = {
+  about: {
+    title: "About the author",
+    subtitle: "",
+    image: {
+      src: "https://picsum.photos/200",
+      alt: "",
+    },
+    text: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ],
+  },
+  mission: {
+    title: "Mission",
+    subtitle: "",
+    image: {
+      src: "https://picsum.photos/200",
+      alt: "",
+    },
+    text: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ],
+  },
+  vision: {
+    title: "Vision",
+    subtitle: "",
+    image: {
+      src: "https://picsum.photos/200",
+      alt: "",
+    },
+    text: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ],
+  },
+  values: {
+    title: "Values",
+    subtitle: "",
+    image: {
+      src: "https://picsum.photos/200",
+      alt: "",
+    },
+    text: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ],
+  },
+};

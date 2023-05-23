@@ -1,27 +1,29 @@
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 
-import 
+import { homeContent } from "~/content";
 
-// todo 
+// todo
 // * dynamic content
 // * if sentence for types : (if image is on left or right - even vs. odd thing)
 
 export default component$(() => {
+  const content = homeContent.imageSection;
   return (
     <article class={"py-20"}>
       <div class={"w-full grid grid-cols-[4fr_auto_1fr]"}>
-        <span class={"w-full mb-[3.5rem] border-b-4 border-[--accent-green]"}></span>
-        <h2 class={"border-b-0 uppercase px-2"}>
-          What is Small-living.dk?
-        </h2>
-        <span class={"w-full mb-[3.5rem] border-b-4 border-[--accent-green]"}></span>
+        <span
+          class={"w-full mb-[3.5rem] border-b-4 border-[--accent-green]"}
+        ></span>
+        <h2 class={"border-b-0 uppercase px-2"}>{content.title}</h2>
+        <span
+          class={"w-full mb-[3.5rem] border-b-4 border-[--accent-green]"}
+        ></span>
       </div>
       <div class={"flex justify-center pt-8 px-16 gap-12"}>
-        
         <section class="px-">
           <Image
-            src="https://picsum.photos/400"
+            src={content.image.src}
             width={500}
             aspectRatio={1 / 1}
             alt="Some picture"
@@ -29,11 +31,15 @@ export default component$(() => {
           ></Image>
         </section>
         <section>
-          <p class={"max-w-[55ch] pb-4"}>
-            Living in a small space can be challenging, but it doesn't have to
-            be. Our blog offers tips and tricks to help you make the most of
-            your space, no matter how small it is.
-          </p>
+          {content.text.map((text, key) => {
+            if (text == null) return;
+            return (
+              <p key={key} class={"max-w-[55ch] pb-4"}>
+                {text}
+              </p>
+            );
+          })}
+
           <p class={"max-w-[55ch] pb-4"}>
             From organization hacks to storage solutions, we have everything you
             need to create a cozy and comfortable home, including small living
