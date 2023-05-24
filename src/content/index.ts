@@ -221,7 +221,7 @@ export const homeContent = {
 export const ArticlesContent = [
   {
     id: 1,
-    title: "Title",
+    title: "Title 1",
     subtitle: "subtitle",
     desc: "desc",
     author: "auhtor",
@@ -254,7 +254,7 @@ export const ArticlesContent = [
   },
   {
     id: 2,
-    title: "Title",
+    title: "Title 2",
     subtitle: "subtitle",
     desc: "desc",
     author: "auhtor",

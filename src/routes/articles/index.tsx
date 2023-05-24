@@ -3,7 +3,7 @@ import { routeLoader$, Link } from "@builder.io/qwik-city";
 import { Image } from '@unpic/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { ArticlesContent } from "~/content";
-interface rmArticles {
+export interface rmArticles {
   id: number;
   title: string;
   subtitle: string;
@@ -29,7 +29,7 @@ interface rmArticles {
   ]
 }
 
-// export const useArticleLoader = routeLoader$<rmArticles[]>(async () => {
+// export const useArticlesLoader = routeLoader$<rmArticles[]>(async () => {
 //   // This code runs only on the server, after every navigation
 //   const res = await fetch(`https://rickandmortyapi.com/api/character/?page=5`);
 //   const characters = await res.json();
@@ -37,15 +37,15 @@ interface rmArticles {
 // });
 
 
-export const useArticleLoader = routeLoader$<rmArticles[]>( () => {
+export const useArticlesLoader = routeLoader$<rmArticles[]>( () => {
 const articles = ArticlesContent;
 
   return articles as rmArticles[];
 });
 
 export default component$(() => {
-  const articles = useArticleLoader();
-  console.log("articles.value", articles.value);
+  const articles = useArticlesLoader();
+  // console.log("articles.value", articles.value);
 
   return (
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
