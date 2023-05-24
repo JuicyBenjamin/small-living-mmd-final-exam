@@ -20,9 +20,11 @@ export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) =>
 
 export default component$ (() => {
   const article = useArticleLoader();
-  return <div>
+  return (
+  <div>
     <h1>Article: {article.value.title}</h1>
   </div>
+  )
   })
 
 
@@ -37,7 +39,7 @@ export default component$ (() => {
       meta: [
         {
           name: 'description',
-          content: metaArticle.desc,
+          content: metaArticle.meta.desc,
         },
         {
           name: 'id',
