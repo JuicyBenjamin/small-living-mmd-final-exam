@@ -2,6 +2,7 @@ import { component$ } from "@builder.io/qwik";
 // import { ArticlesContent } from "~/content";
 import { Image } from "@unpic/qwik";
 import Hashtags from "../hashtags";
+import ThreeArticles from "../threeArticles";
 
 import type { articleContent } from "~/routes/articles/[slug]";
 import type { rmArticles } from "~/routes/articles";
@@ -11,13 +12,13 @@ export interface categoriesContent {
 }
 
 export default component$<articleContent>(({ content }) => {
-  // console.log("props", content.title);
-  // console.log(content.categories);
+
 
   return (
-    <article class={"mx-[20rem]"}>
-      <h2 class={"text-center pb-24 pt-16"}>{content.title}</h2>
+    <article class={"mx-[20rem] min-w-[55ch]"}>
+      <h2 class={"text-center pb-6 pt-16"}>{content.title}</h2>
       {/* next and previous articel image buttons component here */}
+      <ThreeArticles></ThreeArticles>
       <Hashtags categories={content.categories}></Hashtags>
       <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
