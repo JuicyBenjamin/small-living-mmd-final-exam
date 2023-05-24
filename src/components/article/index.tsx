@@ -9,7 +9,7 @@ export default component$<articleContent>(({content}) => {
   console.log("props", content.title)
 
   return (
-    <article class={"mx-[10rem]"}>
+    <article class={"mx-[20rem]"}>
       <h2 class={"text-center pb-24 pt-16"}>{content.title}</h2>
       {/* next and previous articel image buttons component here */}
       {/* tags line component here */}
