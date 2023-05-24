@@ -11,7 +11,7 @@ export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) =>
 
   console.log("requestEvent.params", requestEvent.params.slug)
 
-  const article = ArticlesContent[(requestEvent.params.slug)-1];
+  const article = ArticlesContent[Number(requestEvent.params.slug)-1];
   return article as rmArticles;
 });
 
