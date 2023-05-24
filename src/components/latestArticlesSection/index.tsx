@@ -11,25 +11,53 @@ export default component$(() => {
         </h2>
         <span class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}></span>
       </div>
-      <div class="grid grid-cols-[1fr_3fr] gap-4">
+      <div class="grid grid-cols-[1fr_3fr] grid-rows-[90vh] gap-12 px-20">
         <div class="relative grid grid-rows-3 gap-4">
           <div class="relative flex flex-col justify-end">
             <h3 class="absolute">Article Title</h3>
-            <Image class="object-cover h-full aspect-[4/3]" layout="fullWidth" src="https://picsum.photos/seed/picsum/200/300" />
+            <Image
+            src="https://picsum.photos/650"
+            layout={"fullWidth"}
+            height={350}
+            // aspectRatio={1 / 1}
+            alt="Some picture"
+            class="object-cover h-full border-4 border-[--accent-green]"
+          ></Image>
           </div>
           <div class="relative flex flex-col justify-end">
             <h3 class="absolute">Article Title</h3>
-            <Image class="object-cover h-full aspect-[4/3]" layout="fullWidth" src="https://picsum.photos/seed/picsum/200/300" />
+            <Image
+            src="https://picsum.photos/575"
+            layout={"fullWidth"}
+            height={350}
+            // aspectRatio={1 / 1}
+            alt="Some picture"
+            class="object-cover h-full border-4 border-[--accent-green]"
+          ></Image>
           </div>
           <div class="relative flex flex-col justify-end">
             <h3 class="absolute">Article Title</h3>
-            <Image class="object-cover h-full aspect-[4/3]" layout="fullWidth" src="https://picsum.photos/seed/picsum/200/300" />
+            <Image
+            src="https://picsum.photos/1000"
+            layout={"fullWidth"}
+            height={350}
+            // aspectRatio={1 / 1}
+            alt="Some picture"
+            class="object-cover h-full border-4 border-[--accent-green]"
+          ></Image>
           </div>
         </div>
-        <div>
-          <div class="relative flex flex-col justify-end">
+        <div class="relative">
+          <div class="relative flex flex-col justify-end h-[90vh]">
             <h3 class="absolute">Article Title</h3>
-            <Image class="object-cover aspect-square" layout="fullWidth" src="https://picsum.photos/seed/picsum/200/300" />
+            <Image
+            src="https://picsum.photos/400"
+            layout={"fullWidth"}
+            height={350}
+            // aspectRatio={1 / 2}
+            alt="Some picture"
+            class="object-cover h-full border-4 border-[--accent-green]"
+          ></Image>
           </div>
         </div>
       </div>
