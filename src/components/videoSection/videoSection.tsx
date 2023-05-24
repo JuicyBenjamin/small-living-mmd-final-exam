@@ -6,16 +6,15 @@ export default component$(() => {
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/59KKxorhMD0"
-        title="YouTube video player 1"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk"
+        title="YouTube video player"
+      
       ></iframe>
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/59KKxorhMD0"
-        title="YouTube video player 2"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk"
+        title="YouTube video player"
       ></iframe>
     </section>
   );
