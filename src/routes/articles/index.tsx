@@ -2,45 +2,57 @@ import { component$ } from "@builder.io/qwik";
 import { routeLoader$, Link } from "@builder.io/qwik-city";
 import { Image } from '@unpic/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-
-interface rmCharacter {
+import { ArticlesContent } from "~/content";
+interface rmArticles {
   id: number;
-  name: string;
-  status: string;
-  species: string;
-  type: string;
-  gender: string;
-  origin: {
+  title: string;
+  subtitle: string;
+  desc: string;
+  author: string;
+  date: string;
+  categories: [{
     name: string;
-    url: string;
-  };
-  location: {
+    icon: string;
+  },
+  {
     name: string;
-    url: string;
-  };
-  image: string;
-  episode: string[];
-  url: string;
-  created: string;
+    icon: string;
+  }];
+  text: [
+    string, string, string
+  ];
+  image: [
+    {
+      url :string,
+      alt : string
+    }
+  ]
 }
 
-export const useCharacterLoader = routeLoader$<rmCharacter[]>(async () => {
-  // This code runs only on the server, after every navigation
-  const res = await fetch(`https://rickandmortyapi.com/api/character/?page=5`);
-  const characters = await res.json();
-  return characters.results as rmCharacter[];
+// export const useArticleLoader = routeLoader$<rmArticles[]>(async () => {
+//   // This code runs only on the server, after every navigation
+//   const res = await fetch(`https://rickandmortyapi.com/api/character/?page=5`);
+//   const characters = await res.json();
+//   return characters.results as rmArticles[];
+// });
+
+
+export const useArticleLoader = routeLoader$<rmArticles[]>( () => {
+const articles = ArticlesContent;
+
+  return articles as rmArticles[];
 });
 
 export default component$(() => {
-  const characters = useCharacterLoader();
-  console.log(characters.value);
+  const articles = useArticleLoader();
+  console.log("articles.value", articles.value);
 
   return (
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
-      {characters.value.map((chara, key) => (
+      {articles.value.map((article, key) => (
         <div key={key}>
-          <h2>{chara.name}</h2>
-          <Link href={`/articles/${chara.id}`}><Image aspectRatio={1/1} width={300} src={chara.image}></Image></Link>
+          <h2>{article.title}</h2>
+          <Link href={`/articles/${article.id}`}><Image aspectRatio={1/1} width={300} src={article.image[0].url}></Image></Link>
         </div>
       ))}
     </div>

@@ -44,7 +44,7 @@ export const constantContent = {
       cookies: {
         text: "Cookies and policies",
         href: "#",
-        target: true
+        target: true,
       },
     },
     middle: {
@@ -131,7 +131,7 @@ export const homeContent = {
     },
   ],
   imageSection: {
-    title: "What is Small-living.dk",
+    title: "What is Small living?",
     subtitle: "",
     image: {
       url: "",
@@ -176,8 +176,7 @@ export const homeContent = {
       author: "Henry David Thoreau",
     },
     {
-      quote:
-        "Poverty is my pride.",
+      quote: "Poverty is my pride.",
       author: "Muhammed",
     },
     {
@@ -191,8 +190,7 @@ export const homeContent = {
       author: "Antoine de Saint-Exupéry",
     },
     {
-      quote:
-        "Live simply so that others may simply live.",
+      quote: "Live simply so that others may simply live.",
       author: "Elizabeth Ann Seton",
     },
     {
@@ -204,8 +202,8 @@ export const homeContent = {
       quote:
         "Small rooms or dwellings discipline the mind, large ones weaken it.",
       author: "Leonardo Da Vinci",
-    }
-//  -
+    },
+    //  -
   ],
 
   videos: [
@@ -220,43 +218,74 @@ export const homeContent = {
   ],
 };
 
-export const ArticlesContent = {
-  articles: [
-    {
-      id: 1,
-      title: "",
-      subtitle: "",
-      desc: "",
-      author: "",
-      date: "",
-      categories: [
-        {
-          name: "",
-          icon: "",
-        },
-        {
-          name: "",
-          icon: "",
-        },
-        {
-          name: "",
-          icon: "",
-        },
-      ],
-      texts: ["", "", "", ""],
-      images: [
-        {
-          url: "",
-          alt: "",
-        },
-        {
-          url: "",
-          alt: "",
-        },
-      ],
-    },
-  ],
-};
+export const ArticlesContent = [
+  {
+    id: 1,
+    title: "Title",
+    subtitle: "subtitle",
+    desc: "desc",
+    author: "auhtor",
+    date: "date",
+    categories: [
+      {
+        name: "home",
+        icon: "stuff",
+      },
+      {
+        name: "home stuff",
+        icon: "home stuff",
+      },
+      {
+        name: "ionterior",
+        icon: "interior",
+      },
+    ],
+    text: ["Some text", "New text", "Okay test", ""],
+    image: [
+      {
+        url: "https://picsum.photos/200",
+        alt: "",
+      },
+      {
+        url: "https://picsum.photos/200",
+        alt: "",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Title",
+    subtitle: "subtitle",
+    desc: "desc",
+    author: "auhtor",
+    date: "date",
+    categories: [
+      {
+        name: "home",
+        icon: "stuff",
+      },
+      {
+        name: "home stuff",
+        icon: "home stuff",
+      },
+      {
+        name: "ionterior",
+        icon: "interior",
+      },
+    ],
+    text: ["Some text", "New text", "Okay test", ""],
+    image: [
+      {
+        url: "https://picsum.photos/200",
+        alt: "",
+      },
+      {
+        url: "https://picsum.photos/200",
+        alt: "",
+      },
+    ],
+  },
+];
 
 export const contactContent = {};
 export const aboutContent = {};
