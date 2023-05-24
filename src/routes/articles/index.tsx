@@ -18,10 +18,7 @@ export interface rmArticles {
     {
       name: string;
       icon: string;
-    },
-    {
-      name: string;
-      icon: string;
+      url : string
     }
   ];
   section: [

@@ -234,14 +234,17 @@ export const ArticlesContent = [
       {
         name: "home",
         icon: "stuff",
+        url:"/home"
       },
       {
         name: "home stuff",
         icon: "home stuff",
+        url:"/home_stuff"
       },
       {
         name: "ionterior",
         icon: "interior",
+        url:"/interior"
       },
     ],
     section: [
@@ -290,14 +293,17 @@ export const ArticlesContent = [
       {
         name: "home",
         icon: "stuff",
+        url:"/home"
       },
       {
         name: "home stuff",
         icon: "home stuff",
+        url:"/home_stuff"
       },
       {
         name: "ionterior",
         icon: "interior",
+        url:"/interior"
       },
     ],
     section: [
@@ -345,14 +351,17 @@ export const ArticlesContent = [
       {
         name: "apartment",
         icon: "",
+        url : "/apartment"
       },
       {
         name: "furniture",
         icon: "",
+        url : "/furniture"
       },
       {
         name: "interior_design",
         icon: "",
+        url : "/interior_design"
       },
     ],
     section: [

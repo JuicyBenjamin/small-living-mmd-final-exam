@@ -1,18 +1,24 @@
 import { component$ } from "@builder.io/qwik";
 // import { ArticlesContent } from "~/content";
 import { Image } from "@unpic/qwik";
+import Hashtags from "../hashtags";
 
 import type { articleContent } from "~/routes/articles/[slug]";
+import type { rmArticles } from "~/routes/articles";
 
-export default component$<articleContent>(({content}) => {
+export interface categoriesContent {
+  categories: rmArticles["categories"];
+}
 
-  console.log("props", content.title)
+export default component$<articleContent>(({ content }) => {
+  // console.log("props", content.title);
+  // console.log(content.categories);
 
   return (
     <article class={"mx-[20rem]"}>
       <h2 class={"text-center pb-24 pt-16"}>{content.title}</h2>
       {/* next and previous articel image buttons component here */}
-      {/* tags line component here */}
+      <Hashtags categories={content.categories}></Hashtags>
       <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
           <div>{content.date}</div>
@@ -55,7 +61,7 @@ export default component$<articleContent>(({content}) => {
           Go to the top ⇧
         </button>
       </section>
-            {/* comments section component */}
+      {/* comments section component */}
     </article>
   );
 });
