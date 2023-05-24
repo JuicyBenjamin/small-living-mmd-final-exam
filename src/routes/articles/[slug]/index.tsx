@@ -4,6 +4,7 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import type { rmArticles } from "..";
 import { ArticlesContent } from "~/content";
+import Article from "~/components/article";
 
 
 export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) => {
@@ -13,7 +14,7 @@ export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) =>
   // const res = await fetch(`https://rickandmortyapi.com/api/character/${requestEvent.params.slug}`);
   // const character = await res.json();
 
-  const article = ArticlesContent[(requestEvent.params.slug)-1]
+  const article = ArticlesContent[(requestEvent.params.slug)-1];
   return article as rmArticles;
 });
 
@@ -39,7 +40,7 @@ export default component$ (() => {
       meta: [
         {
           name: 'description',
-          content: metaArticle.meta.desc,
+          content: metaArticle.desc,
         },
         {
           name: 'id',
