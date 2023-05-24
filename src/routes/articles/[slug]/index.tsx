@@ -9,22 +9,23 @@ import Article from "~/components/article";
 
 export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) => {
 
-  console.log("requestEvent.params", requestEvent.params)
-  // This code runs only on the server, after every navigation
-  // const res = await fetch(`https://rickandmortyapi.com/api/character/${requestEvent.params.slug}`);
-  // const character = await res.json();
+  console.log("requestEvent.params", requestEvent.params.slug)
 
   const article = ArticlesContent[(requestEvent.params.slug)-1];
   return article as rmArticles;
 });
 
+export interface articleContent {
+  content : rmArticles;
+}
 
 export default component$ (() => {
   const article = useArticleLoader();
   return (
-  <div>
-    <h1>Article: {article.value.title}</h1>
-  </div>
+  // <div>
+  //   <h1>Article: {article.value.title}</h1>
+  // </div>
+  <Article content = {article.value}></Article>
   )
   })
 

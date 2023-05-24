@@ -1,27 +1,29 @@
 import { component$ } from "@builder.io/qwik";
-import { ArticlesContent } from "~/content";
+// import { ArticlesContent } from "~/content";
 import { Image } from "@unpic/qwik";
 
-export default component$(() => {
-  const articleContent = ArticlesContent[0];
-  console.log(articleContent);
+import type { articleContent } from "~/routes/articles/[slug]";
+
+export default component$<articleContent>(({content}) => {
+
+  console.log("props", content.title)
 
   return (
     <article class={"mx-[10rem]"}>
-      <h2 class={"text-center pb-24 pt-16"}>{articleContent.title}</h2>
+      <h2 class={"text-center pb-24 pt-16"}>{content.title}</h2>
       {/* next and previous articel image buttons component here */}
       {/* tags line component here */}
       <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
-          <div>{articleContent.date}</div>
+          <div>{content.date}</div>
           <span> | </span>
-          <div>by {articleContent.author}</div>
+          <div>by {content.author}</div>
         </div>
         {/* save the article button component */}
         <div>Save the article button</div>
       </section>
       <section class={"grid"}>
-        {articleContent.sections.map((section, key) => {
+        {content.section.map((section, key) => {
           if (section.type == "text") {
             return (
               <p key={key} class={"text-justify pt-12"}>
