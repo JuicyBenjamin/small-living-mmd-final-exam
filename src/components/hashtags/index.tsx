@@ -2,7 +2,6 @@ import { component$ } from "@builder.io/qwik";
 import type { categoriesContent } from "../article";
 
 export default component$<categoriesContent>(({categories}) => {
-console.log(categories);
   return (
     <div class={"w-[100vw] flex gap-8 bg-[--accent-lillac] mx-[-20rem] pl-[20rem] my-10 py-2"}>
       {categories.map((cat, key) => {

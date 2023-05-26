@@ -8,9 +8,6 @@ import Article from "~/components/article";
 
 
 export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) => {
-
-  console.log("requestEvent.params", requestEvent.params.slug)
-
   const article = ArticlesContent[Number(requestEvent.params.slug)-1];
   return article as rmArticles;
 });
