@@ -1,7 +1,8 @@
 import { component$ } from "@builder.io/qwik";
 import { useServerTimeLoader } from "~/routes/layout";
 import { constantContent } from "~/content";
-import { Logo } from "../icons/logo";
+import { Logo } from "../../assets/icons/logo";
+import Button from "../button";
 
 export default component$(() => {
   const serverTime = useServerTimeLoader();
@@ -40,14 +41,15 @@ export default component$(() => {
                 constantContent.footer.middle.newsletter.input.placeholder
               }
             />
-            <button
-              class="border-[1px] border-white ml-2 px-[10px] uppercase"
+            <Button
+              color="whiteBorder"
               formAction={
                 constantContent.footer.middle.newsletter.button.action
               }
+              class="ml-2"
             >
               {constantContent.footer.middle.newsletter.button.text}
-            </button>
+            </Button>
           </div>
         </section>
         <section class="justify-self-center self-end flex gap-2 justify-center">
