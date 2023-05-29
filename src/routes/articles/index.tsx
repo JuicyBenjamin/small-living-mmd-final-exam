@@ -11,7 +11,7 @@ export interface rmArticles {
   author: string;
   date: string;
   mainImg : {
-    src : string, 
+    src : string,
     alt : string
   }
   categories: [
@@ -26,10 +26,10 @@ export interface rmArticles {
         type: "text";
         text: string;
       }
-    | { 
+    | {
       type: "image",
       src : string,
-      alt : string, 
+      alt : string,
       width : number,
       height : number,
       aspectRatio: number
@@ -52,7 +52,6 @@ export const useArticlesLoader = routeLoader$<rmArticles[]>(() => {
 
 export default component$(() => {
   const articles = useArticlesLoader();
-  console.log("articles.value", articles.value);
   return (
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
       {articles.value.map((article, key) => (

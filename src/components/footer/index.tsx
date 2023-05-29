@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { useServerTimeLoader } from "~/routes/layout";
 import { constantContent } from "~/content";
-import { Logo } from "../icons/logo";
+import { Logo } from "../../assets/icons/logo";
 import Button from "../button";
 
 export default component$(() => {
