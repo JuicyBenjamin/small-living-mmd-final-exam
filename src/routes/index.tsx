@@ -1,8 +1,8 @@
 import { component$ } from '@builder.io/qwik';
 
-import Hero from '~/components/hero';
+import LatestArticles from '~/components/lastestArticles';
 import ImageTextSection from '~/components/imageTextSection';
-import LatestArticlesSection from '~/components/latestArticlesSection';
+import FourArticles from '~/components/fourArticles';
 import Quote from '~/components/quote';
 import VideoSection from '~/components/videoSection/videoSection';
 import { homeContent } from '~/content';
@@ -19,9 +19,9 @@ export default component$(() => {
   
   return (
     <>
-      <Hero />
+      <LatestArticles />
       <ImageTextSection content= {imageTextSectionContent} />
-      <LatestArticlesSection />
+      <FourArticles />
       <Quote />
       <VideoSection />
     </>

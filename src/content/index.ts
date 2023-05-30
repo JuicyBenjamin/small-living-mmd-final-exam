@@ -108,8 +108,8 @@ export const homeContent = {
       desc: "",
       key: 2,
       img: {
-        url: "",
-        alt: "",
+        url: "https://picsum.photos/1000",
+        alt: "image",
       },
       link: {
         href: "",
@@ -290,7 +290,7 @@ export const ArticlesContent = [
     author: "auhtor",
     date: "date",
     mainImg: {
-      src: "https://picsum.photos/200",
+      src: "https://picsum.photos/700",
       alt: "image alt",
     },
     categories: [
@@ -416,7 +416,7 @@ export const ArticlesContent = [
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/200",
+      src: "https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg",
       alt: "image alt",
     },
     categories: [
