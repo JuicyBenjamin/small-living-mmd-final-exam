@@ -56,14 +56,14 @@ export default component$<articleContent>(({ content }) => {
       </section>
       {/* related articles carousel component */}
       <section class={"flex justify-end pb-12"}>
-        {content.button.type != null ? <Button color={content.button.type}></Button> : null}
-
-        <button
-          class={"hover:bg-[--accent-green] p-2 "}
-          onClick$={() => scrollTo(0, 0)}
-        >
-          Go to the top ⇧
-        </button>
+        {content.button.type != null ? (
+          <Button
+            color={content.button.type}
+            onClick$={() => scrollTo(0, 0)}
+          >
+            Go to the top ⇧
+          </Button>)
+          : null}
       </section>
       {/* comments section component */}
     </article>

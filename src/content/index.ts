@@ -278,7 +278,7 @@ export const ArticlesContent = [
       },
     ],
     button : {
-      type:"primary",
+      type:"secondary",
       text : "blabla"
     }
   },
@@ -341,7 +341,7 @@ export const ArticlesContent = [
       },
     ],
     button : {
-      type:"primary",
+      type:"secondary",
       text : "blabla"
     }
   },{
@@ -403,7 +403,7 @@ export const ArticlesContent = [
       },
     ],
     button : {
-      type:"primary",
+      type:"secondary",
       text : "blabla"
     }
   },
