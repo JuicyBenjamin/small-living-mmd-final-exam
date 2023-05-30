@@ -4,6 +4,7 @@ import { Image } from "@unpic/qwik";
 export interface IImageTextSection {
   content: {
     title: string;
+    type : string;
     subtitle?: string;
     image: {
       url: string;
@@ -25,7 +26,7 @@ export default component$<IImageTextSection>(({ content }) => {
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
       </div>
-      <div class={"flex justify-center pt-8 px-16 gap-12"}>
+      <div class={`${content.type == "imageRight" ? "flex-row-reverse" : ""} flex justify-center pt-8 px-16 gap-12`}>
         <section class="">
         <Image
             src={content.image.url}

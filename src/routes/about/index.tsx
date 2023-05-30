@@ -15,14 +15,12 @@ export const head: DocumentHead = {
   };
 
   export default component$(()=> {
-
-
     return (
       <>
       <h1 class="text-center">About</h1>
-      {aboutContent.map((articles)=> {
-      <ImageTextSection content = {articles}/>
-      })}
+      {aboutContent.map((articles, key)=> (
+      <ImageTextSection key={key} content={articles}/>
+      ))}
       </>
     )
   })

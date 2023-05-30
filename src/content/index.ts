@@ -132,6 +132,7 @@ export const homeContent = {
   ],
   imageSection: {
     title: "What is Small living?",
+    type: "imageLeft",
     subtitle: "",
     image: {
       url: "https://picsum.photos/200",
@@ -203,7 +204,6 @@ export const homeContent = {
         "Small rooms or dwellings discipline the mind, large ones weaken it.",
       author: "Leonardo Da Vinci",
     },
-
   ],
 
   videos: [
@@ -226,7 +226,7 @@ export const ArticlesContent = [
     desc: "desc",
     author: "auhtor",
     date: "date",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -234,17 +234,17 @@ export const ArticlesContent = [
       {
         name: "home",
         icon: "stuff",
-        url:"/home"
+        url: "/home",
       },
       {
         name: "home stuff",
         icon: "home stuff",
-        url:"/home_stuff"
+        url: "/home_stuff",
       },
       {
         name: "ionterior",
         icon: "interior",
-        url:"/interior"
+        url: "/interior",
       },
     ],
     section: [
@@ -277,10 +277,10 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
-    button : {
-      type:"primary",
-      text : "blabla"
-    }
+    button: {
+      type: "primary",
+      text: "blabla",
+    },
   },
   {
     id: 2,
@@ -289,7 +289,7 @@ export const ArticlesContent = [
     desc: "desc",
     author: "auhtor",
     date: "date",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -297,17 +297,17 @@ export const ArticlesContent = [
       {
         name: "home",
         icon: "stuff",
-        url:"/home"
+        url: "/home",
       },
       {
         name: "home stuff",
         icon: "home stuff",
-        url:"/home_stuff"
+        url: "/home_stuff",
       },
       {
         name: "ionterior",
         icon: "interior",
-        url:"/interior"
+        url: "/interior",
       },
     ],
     section: [
@@ -340,18 +340,19 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
-    button : {
-      type:"primary",
-      text : "blabla"
-    }
-  },{
+    button: {
+      type: "primary",
+      text: "blabla",
+    },
+  },
+  {
     id: 3,
     title: "Headline",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -359,17 +360,17 @@ export const ArticlesContent = [
       {
         name: "apartment",
         icon: "",
-        url : "/apartment"
+        url: "/apartment",
       },
       {
         name: "furniture",
         icon: "",
-        url : "/furniture"
+        url: "/furniture",
       },
       {
         name: "interior_design",
         icon: "",
-        url : "/interior_design"
+        url: "/interior_design",
       },
     ],
     section: [
@@ -402,10 +403,10 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
-    button : {
-      type:"primary",
-      text : "blabla"
-    }
+    button: {
+      type: "primary",
+      text: "blabla",
+    },
   },
   {
     id: 4,
@@ -414,7 +415,7 @@ export const ArticlesContent = [
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -422,17 +423,17 @@ export const ArticlesContent = [
       {
         name: "apartment",
         icon: "",
-        url : "/apartment"
+        url: "/apartment",
       },
       {
         name: "furniture",
         icon: "",
-        url : "/furniture"
+        url: "/furniture",
       },
       {
         name: "interior_design",
         icon: "",
-        url : "/interior_design"
+        url: "/interior_design",
       },
     ],
     section: [
@@ -472,9 +473,10 @@ export const contactContent = {};
 export const aboutContent = [
   {
     title: "About the author",
+    type: "imageLeft",
     subtitle: "",
     image: {
-      url: "https://picsum.photos/1000/400",
+      url: "https://picsum.photos/500",
       alt: "Benjamin Vinterberg",
     },
     text: [
@@ -485,9 +487,10 @@ export const aboutContent = [
   },
   {
     title: "Mission",
+    type: "imageRight",
     subtitle: "",
     image: {
-      url: "https://picsum.photos/1000/400",
+      url: "https://picsum.photos/400",
       alt: "Benjamin Vinterberg",
     },
     text: [
@@ -498,9 +501,10 @@ export const aboutContent = [
   },
   {
     title: "Vision",
+    type: "imageLeft",
     subtitle: "",
     image: {
-      url: "https://picsum.photos/1000/400",
+      url: "https://picsum.photos/600",
       alt: "Benjamin Vinterberg",
     },
     text: [
@@ -511,9 +515,10 @@ export const aboutContent = [
   },
   {
     title: "Values",
+    type: "imageRight",
     subtitle: "",
     image: {
-      url: "https://picsum.photos/1000/400",
+      url: "https://picsum.photos/300",
       alt: "Benjamin Vinterberg",
     },
     text: [
@@ -522,18 +527,4 @@ export const aboutContent = [
       "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
     ],
   },
-  {
-    title: "About the author",
-    subtitle: "",
-    image: {
-      url: "https://picsum.photos/1000/400",
-      alt: "Benjamin Vinterberg",
-    },
-    text: [
-      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
-      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
-      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
-    ],
-  },
- 
 ];
