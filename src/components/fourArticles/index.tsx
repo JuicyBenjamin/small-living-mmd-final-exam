@@ -7,7 +7,7 @@ export default component$(() => {
       <div class={"w-full grid grid-cols-[1fr_auto_4fr]"}>
         <span class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}></span>
         <h2 class={"border-b-0 px-2"}>
-          Latest articles
+          Multi-functional furniture
         </h2>
         <span class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}></span>
       </div>
