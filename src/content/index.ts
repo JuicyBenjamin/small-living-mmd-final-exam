@@ -132,9 +132,10 @@ export const homeContent = {
   ],
   imageSection: {
     title: "What is Small living?",
+    type: "imageLeft",
     subtitle: "",
     image: {
-      url: "",
+      url: "https://picsum.photos/200",
       alt: "",
     },
     text: [
@@ -203,7 +204,6 @@ export const homeContent = {
         "Small rooms or dwellings discipline the mind, large ones weaken it.",
       author: "Leonardo Da Vinci",
     },
-
   ],
 
   videos: [
@@ -226,7 +226,7 @@ export const ArticlesContent = [
     desc: "desc",
     author: "auhtor",
     date: "date",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -234,17 +234,17 @@ export const ArticlesContent = [
       {
         name: "home",
         icon: "stuff",
-        url:"/home"
+        url: "/home",
       },
       {
         name: "home stuff",
         icon: "home stuff",
-        url:"/home_stuff"
+        url: "/home_stuff",
       },
       {
         name: "ionterior",
         icon: "interior",
-        url:"/interior"
+        url: "/interior",
       },
     ],
     section: [
@@ -289,7 +289,7 @@ export const ArticlesContent = [
     desc: "desc",
     author: "auhtor",
     date: "date",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -297,17 +297,17 @@ export const ArticlesContent = [
       {
         name: "home",
         icon: "stuff",
-        url:"/home"
+        url: "/home",
       },
       {
         name: "home stuff",
         icon: "home stuff",
-        url:"/home_stuff"
+        url: "/home_stuff",
       },
       {
         name: "ionterior",
         icon: "interior",
-        url:"/interior"
+        url: "/interior",
       },
     ],
     section: [
@@ -341,7 +341,7 @@ export const ArticlesContent = [
       },
     ],
     button : {
-      type:"secondary",
+      type:"primary",
       text : "blabla"
     }
   },{
@@ -351,7 +351,7 @@ export const ArticlesContent = [
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
-    mainImg : {
+    mainImg: {
       src: "https://picsum.photos/200",
       alt: "image alt",
     },
@@ -359,17 +359,80 @@ export const ArticlesContent = [
       {
         name: "apartment",
         icon: "",
-        url : "/apartment"
+        url: "/apartment",
       },
       {
         name: "furniture",
         icon: "",
-        url : "/furniture"
+        url: "/furniture",
       },
       {
         name: "interior_design",
         icon: "",
-        url : "/interior_design"
+        url: "/interior_design",
+      },
+    ],
+    section: [
+      {
+        type: "text",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? ",
+      },
+      {
+        type: "text",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? ",
+      },
+      {
+        type: "image",
+        src: "https://picsum.photos/1000/400",
+        alt: "image alt",
+        width: 1000,
+        height: 400,
+        aspectRatio: 1 / 4,
+      },
+      {
+        type: "text",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? ",
+      },
+      {
+        type: "image",
+        src: "https://picsum.photos/1000/400",
+        alt: "image alt",
+        width: 1000,
+        height: 400,
+        aspectRatio: 1 / 4,
+      },
+    ],
+    button: {
+      type: "primary",
+      text: "blabla",
+    },
+  },
+  {
+    id: 4,
+    title: "This is the fourth article",
+    subtitle: "subtitle",
+    desc: "description here",
+    author: "author",
+    date: "1st of March 2023",
+    mainImg: {
+      src: "https://picsum.photos/200",
+      alt: "image alt",
+    },
+    categories: [
+      {
+        name: "apartment",
+        icon: "",
+        url: "/apartment",
+      },
+      {
+        name: "furniture",
+        icon: "",
+        url: "/furniture",
+      },
+      {
+        name: "interior_design",
+        icon: "",
+        url: "/interior_design",
       },
     ],
     section: [
@@ -403,11 +466,68 @@ export const ArticlesContent = [
       },
     ],
     button : {
-      type:"secondary",
+      type:"primary",
       text : "blabla"
     }
   },
 ];
 
 export const contactContent = {};
-export const aboutContent = {};
+export const aboutContent = [
+  {
+    title: "About the author",
+    type: "imageLeft",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/500",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "Mission",
+    type: "imageRight",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/400",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "Vision",
+    type: "imageLeft",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/600",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "Values",
+    type: "imageRight",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/300",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+];

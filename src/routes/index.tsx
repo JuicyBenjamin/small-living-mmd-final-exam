@@ -5,16 +5,22 @@ import ImageTextSection from '~/components/imageTextSection';
 import LatestArticlesSection from '~/components/latestArticlesSection';
 import Quote from '~/components/quote';
 import VideoSection from '~/components/videoSection/videoSection';
+import { homeContent } from '~/content';
+
 
 import type { DocumentHead } from '@builder.io/qwik-city';
 
 
 
 export default component$(() => {
+
+  const imageTextSectionContent = homeContent.imageSection;
+  
+  
   return (
     <>
       <Hero />
-      <ImageTextSection />
+      <ImageTextSection content= {imageTextSectionContent} />
       <LatestArticlesSection />
       <Quote />
       <VideoSection />

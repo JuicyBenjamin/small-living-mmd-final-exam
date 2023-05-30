@@ -13,22 +13,24 @@ export interface categoriesContent {
   categories: IArticles["categories"];
 }
 
+
 export default component$<articleContent>(({ content }) => {
 
-
   return (
-    <article class={"mx-[20rem] min-w-[55ch]"}>
-      <h2 class={"text-center pb-6 pt-16"}>{content.title}</h2>
-      {/* next and previous articel image buttons component here */}
+    <article class={"flex flex-col justify-center"}>
+      <div class="grid">
+        <h2 class={"justify-self-center pb-6 pt-16"}>{content.title}</h2>
+      </div>
       <ThreeArticles></ThreeArticles>
       <Hashtags categories={content.categories}></Hashtags>
-      <section class={"flex justify-between pb-6"}>
+      <div class="mx-auto max-w-[75ch] lg:w-[75ch]">
+         <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
           <div>{content.date}</div>
           <span> | </span>
           <div>by {content.author}</div>
         </div>
-        {/* save the article button component */}
+        {/* todo save the article button component */}
         <div>Save the article button</div>
       </section>
       <section class={"grid"}>
@@ -69,6 +71,8 @@ export default component$<articleContent>(({ content }) => {
           </Button>)
           : null}
       </section>
+      </div>
+     
       {/* comments section component */}
     </article>
   );
