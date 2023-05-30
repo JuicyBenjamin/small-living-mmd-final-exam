@@ -20,7 +20,7 @@ export default component$<buttonProps>((props)=> {
     }
 
     return (
-        <button {...props} class={`px-4 py-2 ${classes[props.color]} ${props.class}`}>
+        <button {...props} class={`px-4 py-2 flex gap-2 items-center ${classes[props.color]} ${props.class}`}>
             <Slot />
         </button>
     )

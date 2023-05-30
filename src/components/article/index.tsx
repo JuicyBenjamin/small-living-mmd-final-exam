@@ -7,6 +7,7 @@ import ThreeArticles from "../threeArticles";
 
 import type { articleContent } from "~/routes/articles/[slug]";
 import type { IArticles } from "~/routes/articles";
+import ArrowIcon from "~/assets/icons/arrowIcon";
 
 export interface categoriesContent {
   categories: IArticles["categories"];
@@ -61,7 +62,10 @@ export default component$<articleContent>(({ content }) => {
             color={content.button.type}
             onClick$={() => scrollTo(0, 0)}
           >
-            Go to the top ⇧
+            <p>
+              Go to the top
+            </p>
+            <ArrowIcon class="w-8" up />
           </Button>)
           : null}
       </section>
