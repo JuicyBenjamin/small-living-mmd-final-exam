@@ -466,6 +466,10 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
+    button : {
+      type : "primary",
+      text : "lorem"
+    }
   },
 ];
 
