@@ -134,7 +134,7 @@ export const homeContent = {
     title: "What is Small living?",
     subtitle: "",
     image: {
-      url: "",
+      url: "https://picsum.photos/200",
       alt: "",
     },
     text: [
@@ -469,4 +469,71 @@ export const ArticlesContent = [
 ];
 
 export const contactContent = {};
-export const aboutContent = {};
+export const aboutContent = [
+  {
+    title: "About the author",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/1000/400",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "Mission",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/1000/400",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "Vision",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/1000/400",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "Values",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/1000/400",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+  {
+    title: "About the author",
+    subtitle: "",
+    image: {
+      url: "https://picsum.photos/1000/400",
+      alt: "Benjamin Vinterberg",
+    },
+    text: [
+      "Lorem living in a small space can be challenging, but it doesn't have to be. Our blog offers tips and tricks to help you make the most of your space, no matter how small it is.",
+      "From organization hacks to storage solutions, we have everything you need to create a cozy and comfortable home, including small living in van life.",
+      "By making the most of your small space, you can reduce your carbon footprint and live a more eco-friendly lifestyle, whether you're living in a tiny house, an apartment, or a van.",
+    ],
+  },
+ 
+];
