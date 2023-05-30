@@ -51,6 +51,7 @@
   },
   "dependencies": {
     "@unpic/qwik": "^0.0.17",
-    "motion": "^10.15.5"
+    "motion": "^10.15.5",
+    "react-responsive-carousel": "^3.2.23"
   }
 }

@@ -5,11 +5,11 @@ import Hashtags from "../hashtags";
 import Button from "../button";
 import ThreeArticles from "../threeArticles";
 
-import { articleContent } from "~/routes/articles/[slug]";
-import type { rmArticles } from "~/routes/articles";
+import type { articleContent } from "~/routes/articles/[slug]";
+import type { IArticles } from "~/routes/articles";
 
 export interface categoriesContent {
-  categories: rmArticles["categories"];
+  categories: IArticles["categories"];
 }
 
 export default component$<articleContent>(({ content }) => {
@@ -56,7 +56,7 @@ export default component$<articleContent>(({ content }) => {
       </section>
       {/* related articles carousel component */}
       <section class={"flex justify-end pb-12"}>
-        {articleContent.button.type != null ? <Button type={articleContent.button.type}></Button> : null}
+        {content.button.type != null ? <Button color={content.button.type}></Button> : null}
 
         <button
           class={"hover:bg-[--accent-green] p-2 "}
