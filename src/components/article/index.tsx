@@ -2,13 +2,14 @@ import { component$ } from "@builder.io/qwik";
 // import { ArticlesContent } from "~/content";
 import { Image } from "@unpic/qwik";
 import Hashtags from "../hashtags";
+import Button from "../button";
 import ThreeArticles from "../threeArticles";
 
 import type { articleContent } from "~/routes/articles/[slug]";
-import type { rmArticles } from "~/routes/articles";
+import type { IArticles } from "~/routes/articles";
 
 export interface categoriesContent {
-  categories: rmArticles["categories"];
+  categories: IArticles["categories"];
 }
 
 
@@ -58,6 +59,8 @@ export default component$<articleContent>(({ content }) => {
       </section>
       {/* related articles carousel component */}
       <section class={"flex justify-end pb-12"}>
+        {content.button.type != null ? <Button color={content.button.type}></Button> : null}
+
         <button
           class={"hover:bg-[--accent-green] p-2 "}
           onClick$={() => scrollTo(0, 0)}
