@@ -3,7 +3,8 @@ import { routeLoader$, Link } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { ArticlesContent } from "~/content";
-export interface rmArticles {
+import type { buttonProps } from "~/components/button";
+export interface IArticles {
   id: number;
   title: string;
   subtitle: string;
@@ -33,8 +34,12 @@ export interface rmArticles {
       width : number,
       height : number,
       aspectRatio: number
-   }
-  ];
+    }
+  ],
+  button: {
+    type: buttonProps["color"]
+    text: string
+  }
 }
 
 // export const useArticlesLoader = routeLoader$<rmArticles[]>(async () => {
@@ -44,10 +49,10 @@ export interface rmArticles {
 //   return characters.results as rmArticles[];
 // });
 
-export const useArticlesLoader = routeLoader$<rmArticles[]>(() => {
+export const useArticlesLoader = routeLoader$<IArticles[]>(() => {
   const articles = ArticlesContent;
 
-  return articles as rmArticles[];
+  return articles as IArticles[];
 });
 
 export default component$(() => {

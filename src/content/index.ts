@@ -203,7 +203,7 @@ export const homeContent = {
         "Small rooms or dwellings discipline the mind, large ones weaken it.",
       author: "Leonardo Da Vinci",
     },
-  
+
   ],
 
   videos: [
@@ -277,6 +277,10 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
+    button : {
+      type:"primary",
+      text : "blabla"
+    }
   },
   {
     id: 2,
@@ -336,6 +340,10 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
+    button : {
+      type:"primary",
+      text : "blabla"
+    }
   },{
     id: 3,
     title: "Headline",

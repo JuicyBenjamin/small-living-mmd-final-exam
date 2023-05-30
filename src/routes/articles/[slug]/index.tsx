@@ -2,18 +2,18 @@ import { component$ } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
-import type { rmArticles } from "..";
+import type { IArticles } from "..";
 import { ArticlesContent } from "~/content";
 import Article from "~/components/article";
 
 
-export const useArticleLoader = routeLoader$<rmArticles>(async (requestEvent) => {
+export const useArticleLoader = routeLoader$<IArticles>(async (requestEvent) => {
   const article = ArticlesContent[Number(requestEvent.params.slug)-1];
-  return article as rmArticles;
+  return article as IArticles;
 });
 
 export interface articleContent {
-  content : rmArticles;
+  content : IArticles;
 }
 
 export default component$ (() => {
@@ -22,7 +22,7 @@ export default component$ (() => {
   // <div>
   //   <h1>Article: {article.value.title}</h1>
   // </div>
-  <Article content = {article.value}></Article>
+  <Article content = {article.value} />
   )
   })
 
