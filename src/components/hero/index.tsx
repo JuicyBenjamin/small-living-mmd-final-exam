@@ -13,7 +13,7 @@ export default component$(() => {
             height={350}
             // aspectRatio={1 / 1}
             alt="Some picture"
-            class="object-cover h-full border-4 border-r-2 border-b-2 border-[--accent-green]"
+            class="object-cover h-full border-r-2 border-b-2 border-[--accent-green]"
           ></Image>
         </div>
         <div class="relative flex flex-col justify-end">
@@ -25,7 +25,7 @@ export default component$(() => {
             height={350}
             // aspectRatio={1 / 1}
             alt="Some picture"
-            class="object-cover h-full border-4 border-r-2 border-b-2 border-[--accent-green]"
+            class="object-cover h-full border-r-2 border-t-2 border-b-4 border-[--accent-green]"
           ></Image>
         </div>
       </div>
@@ -38,7 +38,7 @@ export default component$(() => {
             height={700}
             aspectRatio={2 / 1}
             alt="Some picture"
-            class="object-cover h-full border-4 border-r-2 border-b-2 border-[--accent-green]"
+            class="object-cover h-full border-l-2 border-b-4 border-[--accent-green]"
           ></Image>
       </div>
     </div>
