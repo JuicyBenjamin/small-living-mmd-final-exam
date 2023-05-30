@@ -20,17 +20,16 @@ export default component$<articleContent>(({ content }) => {
       <div class="grid">
         <h2 class={"justify-self-center pb-6 pt-16"}>{content.title}</h2>
       </div>
-      {/* next and previous articel image buttons component here */}
       <ThreeArticles></ThreeArticles>
       <Hashtags categories={content.categories}></Hashtags>
-      <div class="mx-auto max-w-[55ch] lg:w-[55ch]">
+      <div class="mx-auto max-w-[75ch] lg:w-[75ch]">
          <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
           <div>{content.date}</div>
           <span> | </span>
           <div>by {content.author}</div>
         </div>
-        {/* save the article button component */}
+        {/* todo save the article button component */}
         <div>Save the article button</div>
       </section>
       <section class={"grid"}>

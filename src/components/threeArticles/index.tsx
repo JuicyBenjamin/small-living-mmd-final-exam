@@ -29,6 +29,7 @@ export default component$(() => {
           src="https://picsum.photos/1000/250"
           layout={"fullWidth"}
           //   height={350}
+          
           // aspectRatio={1 / 1}
           alt="Some picture"
           class="object-cover h-full"
