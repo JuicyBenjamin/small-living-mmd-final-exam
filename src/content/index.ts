@@ -416,7 +416,7 @@ export const ArticlesContent = [
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://www.seiu1000.org/sites/main/files/main-images/camera_lense_0.jpeg",
+      src: "https://picsum.photos/1000/400",
       alt: "image alt",
     },
     categories: [
