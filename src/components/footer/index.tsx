@@ -3,6 +3,7 @@ import { useServerTimeLoader } from "~/routes/layout";
 import { constantContent } from "~/content";
 import { Logo } from "../../assets/icons/logo";
 import Button from "../button";
+import { Form } from "@builder.io/qwik-city";
 
 export default component$(() => {
   const serverTime = useServerTimeLoader();
@@ -32,24 +33,33 @@ export default component$(() => {
             {constantContent.footer.middle.newsletter.text}
           </label>
           <div class="flex justify-center mt-4">
-            <input
-              class="text-white pt-4 border-white border-b-[1px] bg-transparent"
-              name={constantContent.footer.middle.newsletter.input.name}
-              id={constantContent.footer.middle.newsletter.input.id}
-              type="text"
-              placeholder={
-                constantContent.footer.middle.newsletter.input.placeholder
+            <Form
+              class="bg-transparent"
+              onSubmitCompleted$={() =>
+                alert(
+                  "This form isn't yet connected to any backend yet. In the real version you would get a confimartion mail."
+                )
               }
-            />
-            <Button
-              color="whiteBorder"
-              formAction={
-                constantContent.footer.middle.newsletter.button.action
-              }
-              class="ml-2"
             >
-              {constantContent.footer.middle.newsletter.button.text}
-            </Button>
+              <input
+                class="text-white border-white border-0 border-b-[1px] bg-transparent px-4 py-2"
+                name={constantContent.footer.middle.newsletter.input.name}
+                id={constantContent.footer.middle.newsletter.input.id}
+                type="text"
+                placeholder={
+                  constantContent.footer.middle.newsletter.input.placeholder
+                }
+              />
+              <Button
+                color="whiteBorder"
+                formAction={
+                  constantContent.footer.middle.newsletter.button.action
+                }
+                class="ml-2"
+              >
+                {constantContent.footer.middle.newsletter.button.text}
+              </Button>
+            </Form>
           </div>
         </section>
         <section class="justify-self-center self-end flex gap-2 justify-center">
