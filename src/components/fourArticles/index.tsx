@@ -1,65 +1,63 @@
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
+import { ArticlesContent } from "~/content";
+import { Link } from "@builder.io/qwik-city";
 
 export default component$(() => {
+  const fourArticles = ArticlesContent.slice(ArticlesContent.length - 4);
+
+  const highlightArticle = fourArticles[fourArticles.length - 1];
+  const otherArticles = fourArticles.slice(0, 3);
+
+  const chosenCategory = "Multi Functional Furniture";
+
   return (
     <section>
       <div class={"w-full grid grid-cols-[1fr_auto_4fr]"}>
-        <span class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}></span>
-        <h2 class={"border-b-0 px-2"}>
-          Multi-functional furniture
-        </h2>
-        <span class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}></span>
+        <span
+          class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
+        ></span>
+        <h2 class={"border-b-0 px-2"}>{chosenCategory}</h2>
+        <span
+          class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
+        ></span>
       </div>
-      <div class="grid grid-cols-[1fr_3fr] grid-rows-[90vh] gap-12 px-20">
+      <div class="grid grid-cols-[1fr_3fr] grid-rows-[80vh] gap-12 px-20">
         <div class="relative grid grid-rows-3 gap-4">
-          <div class="relative flex flex-col justify-end">
-            <h3 class="absolute">Article Title</h3>
-            <Image
-            src="https://picsum.photos/650"
-            layout={"fullWidth"}
-            height={350}
-            // aspectRatio={1 / 1}
-            alt="Some picture"
-            class="object-cover h-full border-4 border-[--accent-green]"
-          ></Image>
-          </div>
-          <div class="relative flex flex-col justify-end">
-            <h3 class="absolute">Article Title</h3>
-            <Image
-            src="https://picsum.photos/575"
-            layout={"fullWidth"}
-            height={350}
-            // aspectRatio={1 / 1}
-            alt="Some picture"
-            class="object-cover h-full border-4 border-[--accent-green]"
-          ></Image>
-          </div>
-          <div class="relative flex flex-col justify-end">
-            <h3 class="absolute">Article Title</h3>
-            <Image
-            src="https://picsum.photos/1000"
-            layout={"fullWidth"}
-            height={350}
-            // aspectRatio={1 / 1}
-            alt="Some picture"
-            class="object-cover h-full border-4 border-[--accent-green]"
-          ></Image>
-          </div>
+          {otherArticles.map((article, key) => (
+            <div key={key} class="relative flex flex-col justify-end">
+              <h3 class="absolute">{article.title}</h3>
+              <Link
+                class="z-20 absolute h-full w-full border-r-2 border-b-2 border-[--accent-green] bg-cover"
+                href={`/articles/${article.id}`}
+              />
+              <Image
+                src={article.mainImg.src}
+                layout={"fullWidth"}
+                height={350}
+                alt={article.mainImg.alt}
+                class="object-cover h-full border-4 border-[--accent-green]"
+              ></Image>
+            </div>
+          ))}
         </div>
         <div class="relative">
-          <div class="relative flex flex-col justify-end h-[90vh]">
-            <h3 class="absolute">Article Title</h3>
+          <div class="relative flex flex-col justify-end h-[80vh]">
+            <h3 class="absolute">{highlightArticle.title}</h3>
+            <Link
+                class="z-20 absolute h-full w-full border-r-2 border-b-2 border-[--accent-green] bg-cover"
+                href={`/articles/${highlightArticle.id}`}
+              />
             <Image
-            src="https://picsum.photos/400"
-            layout={"fullWidth"}
-            height={350}
-            // aspectRatio={1 / 2}
-            alt="Some picture"
-            class="object-cover h-full border-4 border-[--accent-green]"
-          ></Image>
+              src={highlightArticle.mainImg.src}
+              layout={"fullWidth"}
+              height={350}
+              alt={highlightArticle.mainImg.alt}
+              class="object-cover h-full border-4 border-[--accent-green]"
+            ></Image>
           </div>
         </div>
       </div>
     </section>
-)})
+  );
+});
