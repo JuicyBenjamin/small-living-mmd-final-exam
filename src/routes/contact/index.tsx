@@ -1,4 +1,4 @@
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { DocumentHead, Form } from "@builder.io/qwik-city";
 import { component$ } from "@builder.io/qwik";
 import Button from "~/components/button";
 
@@ -15,11 +15,6 @@ export const head: DocumentHead = {
 
 export default component$(() => {
 
-  // function handleSubmit(event) {
-  //   event.preventDefault();
-  //   alert("In the real version, you would get a confimartion mail.")
-  // }
-
   return (
     <div>
       <h1 class="text-center">Contact</h1>
@@ -29,7 +24,7 @@ export default component$(() => {
         contact form below!
       </p>
       <div class="bg-[--dark-white] p-12 border-[--accent-green] border-[1px] md:w-[95ch] mb-24 mx-auto drop-shadow-[0_0_16px_rgba(50,42,29,.5)]">
-        <form action="#" class="md:grid md:grid-cols-2 md:gap-12">
+        <Form onSubmitCompleted$={()=> alert("This form isn't yet connected to any backend yet. In the real version you would get a confimartion mail.")} class="md:grid md:grid-cols-2 md:gap-12">
           <div>
             <div class="flex flex-col pb-4">
               <label for="firstNameContact">
@@ -59,7 +54,7 @@ export default component$(() => {
 
             <div class="flex flex-col pb-4">
               <label for="emailContact">
-                Last name <em>&#x2a;</em>
+                E-mail <em>&#x2a;</em>
               </label>
               <input
                 id="emailContact"
@@ -110,13 +105,12 @@ export default component$(() => {
               class="mb-4"
             ></textarea>
             <div class="text-center">
-            {/* <button onSubmit$={handleSubmit}>button</button> */}
             <Button color="brown">Submit</Button> 
             </div>
 
           </div>
  
-        </form>
+        </Form>
       </div>
     </div>
   );
