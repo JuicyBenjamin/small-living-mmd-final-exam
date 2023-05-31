@@ -48,7 +48,7 @@ html {
 :root {
   --accent-lillac: #A28CB4;
   --accent-green: #438D61;
-  --dark-brown: #322A1D;
+  --dark-brown: #322a1d;
   --light-brown: #5E503F;
   --dark-white: #F9F5E7;
   --light-white: #FFFCEF;
@@ -63,6 +63,22 @@ body {
 
 form {
   background-color: var(--dark-white);
+}
+input {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--dark-brown);
+  padding-left:5px;
+}
+
+input[type=checkbox]{
+ margin-right: 5px;
+}
+
+textarea {
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--dark-brown);
 }
 
 ::selection {
@@ -108,7 +124,9 @@ header, footer, form, button {
 form {
   font-style: italic;
   font-size: 1.125rem;
+  letter-spacing: normal;
 }
+
 
 button {
   font-size: 1.5rem;
