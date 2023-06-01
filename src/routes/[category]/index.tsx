@@ -31,7 +31,7 @@ export default component$(() => {
     }
   });
 
-  const categoryClasses = "bg-[--accent-green] text-white rounded p-2 hover:bg-green-200 hover:border-black hover:text-black aspect-square w-16 h-16 flex justify-center items-center"
+  const categoryClasses = "bg-[--accent-green] text-white rounded p-2 hover:bg-green-800 hover:border-black aspect-square w-16 h-16 flex justify-center items-center"
 
   return (
     <>
