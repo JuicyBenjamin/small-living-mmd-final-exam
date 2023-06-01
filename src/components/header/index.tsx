@@ -8,7 +8,7 @@ import { Logo } from "../../assets/icons/logo";
 export default component$(() => {
   return (
     <>
-      <header class="flex flex-col bg-[--accent-green] text-white">
+      <header class="flex flex-col bg-[--accent-green] text-white min-h-[10vh]">
         <div class="flex justify-center w-full pt-4">
           <Link href="/" title="small-living-logo">
             <Logo />
