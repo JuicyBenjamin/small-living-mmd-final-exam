@@ -43,7 +43,7 @@ export default component$(() => {
               {...(link.target ? { target: "_blank" } : null)}
               href={link.href}
             >
-              {link.name}
+              <button onClick$={()=> burgerOpen.value = false}>{link.name}</button>
             </Link>
           </li>
         ))}
