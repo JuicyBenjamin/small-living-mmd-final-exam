@@ -24,13 +24,13 @@ export default component$<articleContent>(({ content }) => {
   return (
     <article class={"flex flex-col justify-center"}>
       <div class="grid">
-        <h2 class={"justify-self-center pb-6 pt-16"}>{content.title}</h2>
+        <h2 class={"justify-self-center pb-6 md:pt-16 pt-4"}>{content.title}</h2>
       </div>
       <ThreeArticles></ThreeArticles>
       <Hashtags categories={content.categories}></Hashtags>
-      <div class="mx-auto max-w-[75ch] lg:w-[75ch]">
+      <div class="mx-auto max-w-[75ch] lg:w-[75ch] px-4">
         <section class={"flex justify-between pb-6"}>
-          <div class={"flex gap-2"}>
+          <div class={"flex gap-2 self-center"}>
             <div>{content.date}</div>
             <span> | </span>
             <div>by {content.author}</div>
@@ -46,7 +46,7 @@ export default component$<articleContent>(({ content }) => {
             }
           >
             <Button color="brown" class="flex gap-4">
-              Save the article button
+              Save the article
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -64,7 +64,7 @@ export default component$<articleContent>(({ content }) => {
           {content.section.map((section, key) => {
             if (section.type == "text") {
               return (
-                <p key={key} class={"text-justify pt-12"}>
+                <p key={key} class={"text-justify md:pt-12 pt-4"}>
                   {section.text}
                 </p>
               );
@@ -78,7 +78,7 @@ export default component$<articleContent>(({ content }) => {
                   width={section.width}
                   aspectRatio={section.aspectRatio}
                   alt={section.alt}
-                  class={"py-24 justify-self-center"}
+                  class={"md:py-24 py-8 justify-self-center"}
                 />
               );
             }

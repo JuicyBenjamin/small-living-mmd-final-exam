@@ -15,10 +15,10 @@ export default component$(() => {
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
       </div>
-      <div class="mx-auto md:w-[95ch] py-12">
+      <div class="mx-auto md:w-[95ch] w-full px-4 py-12">
         <p>No comments yet. Be the first to share your thoughts!</p>
       </div>
-      <div class="bg-[--dark-white] p-12 border-[--accent-green] border-[1px] md:w-[95ch] mb-24 mx-auto drop-shadow-[0_0_16px_rgba(50,42,29,.5)]">
+      <div class="bg-[--dark-white] p-12 border-[--accent-green] border-[1px] md:w-[95ch] mb-24 md:mx-auto mx-4 drop-shadow-[0_0_16px_rgba(50,42,29,.5)]">
         <Form
           onSubmitCompleted$={() =>
             alert(
@@ -28,7 +28,7 @@ export default component$(() => {
           class="md:grid md:grid-cols-[3fr_1fr] md:gap-12"
         >
           <div class="grid-cols-1">
-            <div class="grid grid-cols-[1fr_2fr] gap-4">
+            <div class="md:grid md:grid-cols-[1fr_2fr] flex-col gap-4">
               <div class="flex flex-col pb-4">
                 <label for="nameComment">
                   First name <em>&#x2a;</em>
@@ -83,12 +83,12 @@ export default component$(() => {
               <Image
                 layout="fullWidth"
                 aspectRatio={5 / 1}
-                class="h-fulln w-full object-cover"
+                class="md:block h-full w-full object-cover hidden"
                 src="https://picsum.photos/300/500"
               ></Image>
 
 
-            <div class="text-center self-end">
+            <div class="text-center self-end place-self-center pt-4">
               <Button color="brown">Submit</Button>
             </div>
           </div>

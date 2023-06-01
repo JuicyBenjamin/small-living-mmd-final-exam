@@ -16,8 +16,8 @@ export interface IImageTextSection {
 
 export default component$<IImageTextSection>(({ content }) => {
   return (
-    <article class={"py-20"}>
-      <div class={"w-full grid grid-cols-[4fr_auto_1fr]"}>
+    <article class={"md:py-20 py-12"}>
+      <div class={"w-full grid md:grid-cols-[4fr_auto_1fr] grid-cols-[1fr_auto_1fr] text-center"}>
         <span
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
@@ -26,8 +26,8 @@ export default component$<IImageTextSection>(({ content }) => {
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
       </div>
-      <div class={`${content.type == "imageRight" ? "flex-row-reverse" : ""} flex justify-center pt-8 px-16 gap-12`}>
-        <section class="">
+      <div class={`${content.type == "imageRight" ? "flex-row-reverse" : ""} md:flex justify-center pt-8 md:px-16 px-4 gap-12`}>
+        <section class="pb-8 md:pb-0">
         <Image
             src={content.image.url}
             width={500}

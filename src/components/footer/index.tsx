@@ -9,9 +9,14 @@ export default component$(() => {
   const serverTime = useServerTimeLoader();
 
   return (
-    <footer class="flex flex-col w-100 pt-20 pb-4 bg-[--accent-green] text-white">
-      <div class="grid grid-cols-[1fr_1fr_1fr] pb-10">
-        <section class="justify-self-center self-end">
+    <footer class="flex flex-col w-full pt-20 pb-4 bg-[--accent-green] text-white">
+      <div class="md:grid md:grid-cols-[1fr_1fr_1fr] md:grid-rows-2 pb-10">
+        <section class="md:place-self-center md:row-span-1 md:col-span-3">
+        <a class="flex justify-center pb-10" href="/">
+            <Logo />
+          </a>
+        </section>
+        <section class="md:justify-self-center self-end text-center pb-8 md:row-span-2">
           <p>{constantContent.footer.left.cvr}</p>
           <div>
             <a
@@ -25,14 +30,11 @@ export default component$(() => {
             </a>
           </div>
         </section>
-        <section class="flex flex-col justify-self-center">
-          <a class="flex justify-center pb-10" href="/">
-            <Logo />
-          </a>
-          <label for="newsletter" class="max-w-[40ch] text-center">
+        <section class="md:flex md:flex-col md:justify-self-center text-center md:row-span-2">
+          <label for="newsletter" class="max-w-[40ch]">
             {constantContent.footer.middle.newsletter.text}
           </label>
-          <div class="justify-center mt-4">
+          <div class="flex justify-center mt-4 pb-8">
             <Form
               class="bg-transparent flex"
               onSubmitCompleted$={() =>
@@ -62,7 +64,7 @@ export default component$(() => {
             </Form>
           </div>
         </section>
-        <section class="justify-self-center self-end flex gap-2 justify-center">
+        <section class="md:justify-self-center self-end pb-8 flex gap-2 justify-center md:row-span-2">
           <a href="#">
             <svg
               xmlns="http://www.w3.org/2000/svg"
