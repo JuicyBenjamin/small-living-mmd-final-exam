@@ -13,7 +13,7 @@ export default component$(() => {
 
   return (
     <div class="w-full grid grid-cols-2">
-      <div class="grid grid-rows-2 relative h-[90vh]">
+      <div class="grid grid-rows-2 relative md:h-[90vh] h-[55vh]">
         <div class="relative flex flex-col justify-end">
         <h3 class="z-10 absolute p-4">{threeLatestArticles[0].title}</h3>
           <Link
@@ -31,7 +31,7 @@ export default component$(() => {
         <Image layout="fullWidth" class="object-cover z-0 w-full h-full absolute" src={threeLatestArticles[1].mainImg.src}  alt={threeLatestArticles[1].mainImg.alt}/>
         </div>
       </div>
-      <div class="relative flex flex-col justify-end h-[90vh]">
+      <div class="relative flex flex-col justify-end md:h-[90vh] h-[55vh]">
         <h3 class="z-10 absolute p-4">{threeLatestArticles[2].title}</h3>
         <Link
           class="z-20 absolute h-full w-full border-r-2 border-b-2 border-[--accent-green] bg-cover"

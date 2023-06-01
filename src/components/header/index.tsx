@@ -6,15 +6,19 @@ import Navigation from "~/components/navigation";
 import { Logo } from "../../assets/icons/logo";
 
 export default component$(() => {
+
+
   return (
     <>
-      <header class="flex flex-col bg-[--accent-green] text-white">
-        <div class="flex justify-center w-full pt-4">
-          <Link href="/" title="small-living-logo">
-            <Logo />
-          </Link>
+      <header class="mb-4 text-white h-fit">
+        <div class="flex flex-col h-12">
+          <div class="z-40 flex justify-center w-full pt-4 bg-[--accent-green] pb-4 h-fit">
+            <Link href="/" title="small-living-logo">
+              <Logo />
+            </Link>
+          </div>
+          <Navigation />
         </div>
-        <Navigation />
       </header>
     </>
   );
