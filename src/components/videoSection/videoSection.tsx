@@ -3,7 +3,7 @@ import { component$ } from "@builder.io/qwik";
 export default component$(() => {
   return (
     <section
-      class={"flex flex-col md:flex-row justify-around gap-8 py-20 md:px-16"}
+      class={"flex flex-col md:flex-row justify-around gap-8 py-20 md:px-16 items-center"}
     >
       <iframe
         width="315"
