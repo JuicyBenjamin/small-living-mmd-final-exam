@@ -10,7 +10,7 @@ export default component$(() => {
 
   return (
     <>
-      <div class="md:opacity-0 opacity-100 absolute top-3 right-5 transition-opacity z-20">
+      <div class="md:opacity-0 opacity-100 absolute top-3 right-5 transition-opacity z-50">
         <button onClick$={() => (burgerOpen.value = !burgerOpen.value)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ export default component$(() => {
    <ul
         class={`${
           burgerOpen.value ? "md:flex translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-        } md:flex md:flex-row md:justify-center md:gap-12 md:py-12 text-center py-8 transition-all ease-in-out bg-[--accent-green]`}
+        } md:flex md:flex-row md:justify-center md:gap-12 md:py-12 text-center py-8 transition-all ease-in-out bg-[--accent-green] z-30`}
       >
         {navigationContent.map((link, key) => (
           <li key={key}>
