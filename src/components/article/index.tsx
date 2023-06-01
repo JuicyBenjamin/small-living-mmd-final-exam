@@ -45,12 +45,11 @@ export default component$<articleContent>(({ content }) => {
             if (section.src == null) return;
             return (
               <Image
+                layout="fullWidth"
                 key={key}
                 src={section.src}
-                width={section.width}
-                aspectRatio={section.aspectRatio}
                 alt={section.alt}
-                class={"py-24 justify-self-center"}
+                class={`py-24 justify-self-center aspect-${section.aspectRatio}`}
               />
             );
           }
