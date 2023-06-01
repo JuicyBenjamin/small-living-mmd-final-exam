@@ -17,7 +17,7 @@ export interface IImageTextSection {
 export default component$<IImageTextSection>(({ content }) => {
   return (
     <article class={"md:py-20 py-12"}>
-      <div class={"w-full grid md:grid-cols-[4fr_auto_1fr] grid-cols-[1fr_auto_1fr] text-center"}>
+      <div class={`${content.type == "imageRight" ? "md:grid-cols-[1fr_auto_4fr]" : "md:grid-cols-[4fr_auto_1fr]"} w-full grid grid-cols-[1fr_auto_1fr] text-center`}>
         <span
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
