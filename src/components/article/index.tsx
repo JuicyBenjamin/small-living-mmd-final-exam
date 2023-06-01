@@ -5,10 +5,10 @@ import Hashtags from "../hashtags";
 import Button from "../button";
 import ThreeArticles from "../threeArticles";
 import CommentSection from "../commentSection";
+import ArrowIcon from "~/assets/icons/arrowIcon";
 
 import type { articleContent } from "~/routes/articles/[slug]";
 import type { IArticles } from "~/routes/articles";
-import ArrowIcon from "~/assets/icons/arrowIcon";
 
 
 export interface categoriesContent {
@@ -16,9 +16,10 @@ export interface categoriesContent {
 }
 
 export default component$<articleContent>(({ content }) => {
-
   const bookmarkSVG = useSignal<Element>();
-  const colorFillBookmark = useSignal("M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z");
+  const colorFillBookmark = useSignal(
+    "M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+  );
 
   return (
     <article class={"flex flex-col justify-center"}>
@@ -36,9 +37,12 @@ export default component$<articleContent>(({ content }) => {
           </div>
           <div
             onClick$={() =>
-              colorFillBookmark.value == "M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
-                ? (colorFillBookmark.value = "M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z'")
-                : (colorFillBookmark.value = "M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z")
+              colorFillBookmark.value ==
+              "M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"
+                ? (colorFillBookmark.value =
+                    "M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z'")
+                : (colorFillBookmark.value =
+                    "M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z")
             }
           >
             <Button color="brown" class="flex gap-4">
@@ -81,7 +85,17 @@ export default component$<articleContent>(({ content }) => {
           })}
         </section>
         {/* related articles carousel component */}
-        <section class={"flex justify-end pb-12"}>
+        <section class={"flex justify-between align-end pb-12"}>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="#537C63"
+            class="bi bi-share-fill self-center"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+          </svg>
         {content.button.type != null ? (
           <Button
             color={content.button.type}
