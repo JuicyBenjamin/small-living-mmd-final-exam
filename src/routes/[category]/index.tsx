@@ -40,7 +40,7 @@ export default component$(() => {
         <h2>Categories</h2>
         <div class="flex gap-4">
           <button class={categoryClasses} onClick$={() => currentCategory.value = "all"}>All</button>
-          {svg.map((icon, key) => <button key={key} class={categoryClasses} onClick$={() => currentCategory.value = icon.name}><img class="h-full" src={icon.src} /></button>)}
+          {svg.map((icon, key) => <button key={key} title={icon.name} class={categoryClasses} onClick$={() => currentCategory.value = icon.name}><img class="h-full" src={icon.src} /></button>)}
         </div>
       </div>
       <p class="m-8 text-center">Current category is {currentCategory.value}</p>

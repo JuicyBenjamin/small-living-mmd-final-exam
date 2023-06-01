@@ -16,9 +16,7 @@ export default component$(() => {
     <div>
       <main>
         <Header />
-        <div class="h-fit md:mt-[29.9vh] mt-[11vh]">
           <Slot />
-        </div>
       </main>
 
       <Footer />

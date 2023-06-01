@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { useServerTimeLoader } from "~/routes/layout";
 import { constantContent } from "~/content";
-import { Logo } from "../../assets/icons/logo";
+import  Logo  from "../../assets/icons/logo.svg";
 import Button from "../button";
 import { Form } from "@builder.io/qwik-city";
 
@@ -13,8 +13,8 @@ export default component$(() => {
       <div class="md:grid md:grid-cols-[1fr_1fr_1fr] md:grid-rows-2 pb-10">
         <section class="md:place-self-center md:row-span-1 md:col-span-3">
         <a class="flex justify-center pb-10" href="/">
-            <Logo />
-          </a>
+          <img class="w-[6.25rem] h-[6.25rem]" src={Logo} alt="Logo" />
+        </a>
         </section>
         <section class="md:justify-self-center self-end text-center pb-8 md:row-span-2">
           <p>{constantContent.footer.left.cvr}</p>

@@ -12,7 +12,7 @@ export default component$(() => {
   const route = useLocation();
 
   return (
-    <div class="w-full grid grid-cols-2">
+    <div class="relative top-[-16rem] md:top-0 w-full grid grid-cols-2">
       <div class="grid grid-rows-2 relative md:h-[90vh] h-[55vh]">
         <div class="relative flex flex-col justify-end">
         <h3 class="z-10 absolute p-4">{threeLatestArticles[0].title}</h3>

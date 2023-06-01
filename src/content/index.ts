@@ -411,13 +411,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 4,
-    title: "This is the fourth article",
+    title: "Tiny Living Tales",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1080/600",
       alt: "image alt",
     },
     categories: [
@@ -460,7 +460,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/800",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -474,13 +474,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 5,
-    title: "This is the fourth article",
+    title: "Rolling Homes: Vanlife Explorations",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1300/900",
       alt: "image alt",
     },
     categories: [
@@ -511,7 +511,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1090/600",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -537,13 +537,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 6,
-    title: "This is the fourth article",
+    title: "Tiny House Bliss: Embracing Minimalism",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1600/1200",
       alt: "image alt",
     },
     categories: [
@@ -574,7 +574,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1090/600",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -586,7 +586,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/500",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -600,13 +600,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 7,
-    title: "This is the fourth article",
+    title: "Living Large in Small Spaces",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1400/800",
       alt: "image alt",
     },
     categories: [
@@ -637,7 +637,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/600",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -649,7 +649,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1400/1200",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -663,13 +663,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 8,
-    title: "This is the fourth article",
+    title: "The Tiny Abode: Unlocking Big Living",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1400/900",
       alt: "image alt",
     },
     categories: [
@@ -700,7 +700,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/600",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -726,13 +726,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 9,
-    title: "This is the fourth article",
+    title: "Wanderlust on Wheels: Vanlife Adventures",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1300/800",
       alt: "image alt",
     },
     categories: [
@@ -763,7 +763,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/800",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -789,13 +789,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 10,
-    title: "This is the fourth article",
+    title: "Maximizing Comfort in Tiny Homes",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1200/600",
       alt: "image alt",
     },
     categories: [
@@ -838,7 +838,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/600",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -852,13 +852,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 11,
-    title: "This is the fourth article",
+    title: "The Art of Downsizing: Finding Freedom",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1100/500",
       alt: "image alt",
     },
     categories: [
@@ -901,7 +901,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1200/400",
         alt: "image alt",
         width: 1000,
         height: 400,
@@ -921,7 +921,7 @@ export const ArticlesContent: IArticles[] = [
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1300/600",
       alt: "image alt",
     },
     categories: [
@@ -978,13 +978,13 @@ export const ArticlesContent: IArticles[] = [
   },
   {
     id: 13,
-    title: "This is the fourth article",
+    title: "From Apartment to Microhome",
     subtitle: "subtitle",
     desc: "description here",
     author: "author",
     date: "1st of March 2023",
     mainImg: {
-      src: "https://picsum.photos/1000/400",
+      src: "https://picsum.photos/1100/500",
       alt: "image alt",
     },
     categories: [
@@ -1015,7 +1015,7 @@ export const ArticlesContent: IArticles[] = [
       },
       {
         type: "image",
-        src: "https://picsum.photos/1000/400",
+        src: "https://picsum.photos/1300/600",
         alt: "image alt",
         width: 1000,
         height: 400,
