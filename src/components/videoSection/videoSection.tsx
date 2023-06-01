@@ -2,8 +2,9 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <section class={"flex justify-between gap-8 py-20 px-16"}>
+    <section class={"flex flex-col md:flex-row justify-between gap-8 py-20 md:px-16"}>
       <iframe
+      class="w-[90vw] md:w-full mx-auto"
         width="560"
         height="315"
         src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk"
@@ -11,6 +12,7 @@ export default component$(() => {
       
       ></iframe>
       <iframe
+            class="w-[90vw] md:w-full mx-auto"
         width="560"
         height="315"
         src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk"
