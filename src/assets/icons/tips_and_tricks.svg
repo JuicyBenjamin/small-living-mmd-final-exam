@@ -1,1 +1,63 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="34.78mm" height="41.7mm" viewBox="0 0 98.59 118.2"><defs><style>.cls-1,.cls-3,.cls-4{fill:none;}.cls-1,.cls-2,.cls-3,.cls-4{stroke:#000;}.cls-1,.cls-2,.cls-4{stroke-miterlimit:10;}.cls-1{stroke-width:3px;}.cls-2{stroke-width:0.75px;}.cls-3{stroke-linecap:round;stroke-linejoin:round;}.cls-3,.cls-4{stroke-width:2px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_13" data-name="Layer 13"><path class="cls-1" d="M81.8,60.24c-.67-21.79-14.64-32.71-32.7-32.71S16.28,38.67,16.39,60.24,36.11,86.48,36.25,93.55s24.84,7.39,24.6,0S82.46,82,81.8,60.24Z"/><rect class="cls-2" x="34.7" y="91.07" width="28.31" height="8.8" rx="1.44"/><rect class="cls-2" x="34.98" y="99.91" width="28.31" height="8.8" rx="1.44"/><path class="cls-2" d="M56.87,117.83h-14a6.54,6.54,0,0,1-5-2.34c-.89-1-1.46-1.88-1.46-1.88C34,108.3,38,109,40.22,109h18.1c2.25,0,5.56-1.2,4.09,4.4a10.57,10.57,0,0,1-3,3.3A4.63,4.63,0,0,1,56.87,117.83Z"/><line class="cls-3" x1="81.53" y1="32.47" x2="96.54" y2="22.11"/><line class="cls-3" x1="88.41" y1="49.27" x2="97.59" y2="46.45"/><line class="cls-3" x1="48.74" y1="20.05" x2="48.8" y2="1"/><line class="cls-3" x1="65.9" y1="23.22" x2="71.82" y2="9.93"/><line class="cls-3" x1="32.26" y1="23.67" x2="23.88" y2="11.77"/><line class="cls-4" x1="0.46" y1="26.51" x2="17.71" y2="35.34"/><line class="cls-3" x1="1.8" y1="48.63" x2="11.07" y2="51.15"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="34.78mm" height="41.7mm" viewBox="0 0 98.59 118.2">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-3,
+            .cls-4 {
+                fill: transparent;
+            }
+
+            .cls-1,
+            .cls-2,
+            .cls-3,
+            .cls-4 {
+                stroke: #FFFCEF;
+            }
+
+            .cls-1,
+            .cls-2,
+            .cls-4 {
+stroke-width: 3px;
+            }
+
+            .cls-1 {
+                stroke-width: 3px;
+            }
+
+            .cls-2 {
+                stroke-width: 3px;
+            }
+
+            .cls-3 {
+                stroke-linecap: round;
+                stroke-linejoin: round;
+            }
+
+            .cls-3,
+            .cls-4 {
+                stroke-width: 3px;
+            }
+
+            rect, path {
+                fill: #FFFCEF;
+            }
+        </style>
+    </defs>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_13" data-name="Layer 13">
+            <path class="cls-1"
+                d="M81.8,60.24c-.67-21.79-14.64-32.71-32.7-32.71S16.28,38.67,16.39,60.24,36.11,86.48,36.25,93.55s24.84,7.39,24.6,0S82.46,82,81.8,60.24Z" />
+            <rect class="cls-2" x="34.7" y="91.07" width="28.31" height="8.8" rx="1.44" />
+            <rect class="cls-2" x="34.98" y="99.91" width="28.31" height="8.8" rx="1.44" />
+            <path class="cls-2"
+                d="M56.87,117.83h-14a6.54,6.54,0,0,1-5-2.34c-.89-1-1.46-1.88-1.46-1.88C34,108.3,38,109,40.22,109h18.1c2.25,0,5.56-1.2,4.09,4.4a10.57,10.57,0,0,1-3,3.3A4.63,4.63,0,0,1,56.87,117.83Z" />
+            <line class="cls-3" x1="81.53" y1="32.47" x2="96.54" y2="22.11" />
+            <line class="cls-3" x1="88.41" y1="49.27" x2="97.59" y2="46.45" />
+            <line class="cls-3" x1="48.74" y1="20.05" x2="48.8" y2="1" />
+            <line class="cls-3" x1="65.9" y1="23.22" x2="71.82" y2="9.93" />
+            <line class="cls-3" x1="32.26" y1="23.67" x2="23.88" y2="11.77" />
+            <line class="cls-4" x1="0.46" y1="26.51" x2="17.71" y2="35.34" />
+            <line class="cls-3" x1="1.8" y1="48.63" x2="11.07" y2="51.15" />
+        </g>
+    </g>
+</svg>
