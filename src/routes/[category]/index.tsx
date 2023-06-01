@@ -3,7 +3,7 @@ import { Link, routeLoader$ } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import Quote from "~/components/quote";
 import { ArticlesContent } from "~/content";
-import { apartment, tiny_house } from "~/assets/icons";
+import svg from "~/assets/icons";
 
 export const useCategoryLoader = routeLoader$((requestEvent) => {
   const acceptedParams: categoryTypes[] = ["all", "vanlife", "tinyhouse", "tiny-apartment", "diy"];
@@ -23,15 +23,15 @@ export type categoryTypes = "all" | "vanlife" | "tinyhouse" | "tiny-apartment" |
 
 export default component$(() => {
   const currentCategoryParam = useCategoryLoader().value;
-  const currentCategory = useSignal<categoryTypes>(currentCategoryParam as categoryTypes);
+  const currentCategory = useSignal(currentCategoryParam);
 
   const filteredArticles = ArticlesContent.filter((article) => {
-    if (article.categories.map((category) => category.name).includes(currentCategory.value)) {
+    if (article.categories.map((category) => category.name).includes(currentCategory.value ?? "")) {
       return article;
     }
   });
 
-  const categoryClasses = "bg-[--accent-green] text-white rounded p-2 hover:bg-green-200 hover:border-black hover:text-black aspect-square"
+  const categoryClasses = "bg-[--accent-green] text-white rounded p-2 hover:bg-green-200 hover:border-black hover:text-black aspect-square w-16 h-16 flex justify-center items-center"
 
   return (
     <>
@@ -40,13 +40,10 @@ export default component$(() => {
         <h2>Categories</h2>
         <div class="flex gap-4">
           <button class={categoryClasses} onClick$={() => currentCategory.value = "all"}>All</button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "vanlife"}></button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "tinyhouse"}><img class="h-16" src={tiny_house} /></button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "tiny-apartment"}><img class="h-16" src={apartment} /></button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "diy"}>Diy</button>
+          {svg.map((icon, key) => <button key={key} class={categoryClasses} onClick$={() => currentCategory.value = icon.name}><img class="h-full" src={icon.src} /></button>)}
         </div>
-        <p class="m-8">Current category is {currentCategory.value}</p>
       </div>
+      <p class="m-8 text-center">Current category is {currentCategory.value}</p>
       <div class="grid justify-center">
         {/* should be the first 5 articles here */}
         {filteredArticles.length > 0 ? (
