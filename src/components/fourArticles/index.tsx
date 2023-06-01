@@ -13,7 +13,7 @@ export default component$(() => {
 
   return (
     <section>
-      <div class={"w-full grid grid-cols-[1fr_auto_4fr]"}>
+      <div class={"w-full grid md:grid-cols-[1fr_auto_4fr] grid-cols-[1fr_auto_1fr] text-center"}>
         <span
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
@@ -22,7 +22,8 @@ export default component$(() => {
           class={"w-full mb-[3.5rem] border-b-4 border-[--dark-brown]"}
         ></span>
       </div>
-      <div class="grid grid-cols-[1fr_3fr] grid-rows-[80vh] gap-12 px-20">
+
+      <div class="max-sm:hidden grid grid-cols-[1fr_3fr] grid-rows-[80vh] gap-12 px-20">
         <div class="relative grid grid-rows-3 gap-4">
           {otherArticles.map((article, key) => (
             <div key={key} class="relative flex flex-col justify-end">
@@ -57,6 +58,28 @@ export default component$(() => {
             ></Image>
           </div>
         </div>
+      </div>
+
+
+      <div class="hidden max-sm:grid grid-cols-2 grid-rows-2 gap-2 px-4">
+
+          {fourArticles.map((article, key) => (
+            <div key={key} class="relative flex flex-col justify-end ">
+              <h3 class="max-w-full max-h-20 py-2 absolute line-clamp-1">{article.title}</h3>
+              <Link
+                class="z-20 absolute h-full w-full border-r-2 border-b-2 border-[--accent-green] bg-cover"
+                href={`/articles/${article.id}`}
+              />
+              <Image
+                src={article.mainImg.src}
+                layout={"fullWidth"}
+                height={350}
+                alt={article.mainImg.alt}
+                class="object-cover h-full border-4 border-[--accent-green]"
+              ></Image>
+            </div>
+          ))}
+ 
       </div>
     </section>
   );
