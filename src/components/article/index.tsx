@@ -28,8 +28,19 @@ export default component$<articleContent>(({ content }) => {
             <span> | </span>
             <div>by {content.author}</div>
           </div>
-          {/* todo save the article button component */}
-          <div>Save the article button</div>
+          <Button color="brown" class="flex gap-4">
+            Save the article button
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-bookmark"
+              viewBox="0 0 20 20"
+            >
+              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+            </svg>
+          </Button>
         </section>
         <section class={"grid"}>
           {content.section.map((section, key) => {
@@ -57,10 +68,6 @@ export default component$<articleContent>(({ content }) => {
         </section>
         {/* related articles carousel component */}
         <section class={"flex justify-end pb-12"}>
-          {content.button.type != null ? (
-            <Button color={content.button.type}></Button>
-          ) : null}
-
           <button
             class={"hover:bg-[--accent-green] p-2 "}
             onClick$={() => scrollTo(0, 0)}
