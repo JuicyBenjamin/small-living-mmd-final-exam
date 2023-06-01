@@ -32,9 +32,9 @@ export default component$(() => {
           <label for="newsletter" class="max-w-[40ch] text-center">
             {constantContent.footer.middle.newsletter.text}
           </label>
-          <div class="flex justify-center mt-4">
+          <div class="justify-center mt-4">
             <Form
-              class="bg-transparent"
+              class="bg-transparent flex"
               onSubmitCompleted$={() =>
                 alert(
                   "This form isn't yet connected to any backend yet. In the real version you would get a confimartion mail."
