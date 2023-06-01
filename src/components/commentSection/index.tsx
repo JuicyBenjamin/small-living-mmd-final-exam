@@ -22,7 +22,7 @@ export default component$(() => {
         <Form
           onSubmitCompleted$={() =>
             alert(
-              "This form isn't yet connected to any backend yet. In the real version yout comment would be submittetd to a check and posted."
+              "This form isn't yet connected to any backend yet. In the real version your comment would be submittetd to a check and posted."
             )
           }
           class="md:grid md:grid-cols-[3fr_1fr] md:gap-12"
