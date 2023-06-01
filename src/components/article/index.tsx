@@ -8,14 +8,13 @@ import ThreeArticles from "../threeArticles";
 import type { articleContent } from "~/routes/articles/[slug]";
 import type { IArticles } from "~/routes/articles";
 import ArrowIcon from "~/assets/icons/arrowIcon";
+import CommentSection from "../commentSection";
 
 export interface categoriesContent {
   categories: IArticles["categories"];
 }
 
-
 export default component$<articleContent>(({ content }) => {
-
   return (
     <article class={"flex flex-col justify-center"}>
       <div class="grid">
@@ -24,7 +23,7 @@ export default component$<articleContent>(({ content }) => {
       <ThreeArticles></ThreeArticles>
       <Hashtags categories={content.categories}></Hashtags>
       <div class="mx-auto max-w-[75ch] lg:w-[75ch]">
-         <section class={"flex justify-between pb-6"}>
+        <section class={"flex justify-between pb-6"}>
         <div class={"flex gap-2"}>
           <div>{content.date}</div>
           <span> | </span>
@@ -72,8 +71,7 @@ export default component$<articleContent>(({ content }) => {
           : null}
       </section>
       </div>
-     
-      {/* comments section component */}
+      <CommentSection />
     </article>
   );
 });
