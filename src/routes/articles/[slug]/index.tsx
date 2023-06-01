@@ -20,10 +20,7 @@ export interface articleContent {
 export default component$ (() => {
   const article = useArticleLoader();
   return (
-  // <div>
-  //   <h1>Article: {article.value.title}</h1>
-  // </div>
-  <Article content = {article.value} />
+    <Article content = {article.value} />
   )
   })
 

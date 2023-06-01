@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.84mm" height="43.57mm" viewBox="0 0 64.74 123.51">
+    <defs>
+        <style>
+
+            .cls-1,
+            .cls-2,
+            .cls-4 {
+                fill: none;
+            }
+
+            .cls-1,
+            .cls-2,
+            .cls-3 {
+                stroke: #FFFCEF;
+            }
+
+            .cls-1, .cls-2, .cls-3 {
+                stroke-width: 3px;
+            }
+
+
+            .cls-3 {
+                fill: #FFFCEF;
+                stroke-width: 0.5px;
+            }
+
+        </style>
+    </defs>
+        <g id="Layer_13" data-name="Layer 13">
+            <rect class="cls-1" x="1.5" y="1.5" width="61.74" height="120.51" />
+            <rect class="cls-2" x="23.63" y="93.79" width="17.47" height="28.22" />
+            <rect class="cls-3" x="7.76" y="71.97" width="13.19" height="13.19" />
+            <rect class="cls-3" x="25.93" y="71.97" width="13.19" height="13.19" />
+            <rect class="cls-3" x="44.41" y="71.97" width="13.19" height="13.19" />
+            <rect class="cls-3" x="7.6" y="51.86" width="13.19" height="13.19" />
+            <rect class="cls-3" x="25.77" y="51.86" width="13.19" height="13.19" />
+            <rect class="cls-3" x="44.25" y="51.86" width="13.19" height="13.19" />
+            <rect class="cls-3" x="7.45" y="31.75" width="13.19" height="13.19" />
+            <rect class="cls-3" x="25.61" y="31.75" width="13.19" height="13.19" />
+            <rect class="cls-3" x="44.1" y="31.75" width="13.19" height="13.19" />
+            <rect class="cls-3" x="7.29" y="11.63" width="13.19" height="13.19" />
+            <rect class="cls-3" x="25.46" y="11.63" width="13.19" height="13.19" />
+            <rect class="cls-3" x="43.94" y="11.63" width="13.19" height="13.19" />
+        </g>
+</svg>
