@@ -3,6 +3,7 @@ import { Link, routeLoader$ } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import Quote from "~/components/quote";
 import { ArticlesContent } from "~/content";
+import { apartment, tiny_house } from "~/assets/icons";
 
 export const useCategoryLoader = routeLoader$((requestEvent) => {
   const acceptedParams: categoryTypes[] = ["all", "vanlife", "tinyhouse", "tiny-apartment", "diy"];
@@ -30,7 +31,7 @@ export default component$(() => {
     }
   });
 
-  const categoryClasses = "bg-black text-white rounded p-2 hover:bg-white hover:border-black hover:text-black"
+  const categoryClasses = "bg-[--accent-green] text-white rounded p-2 hover:bg-green-200 hover:border-black hover:text-black aspect-square"
 
   return (
     <>
@@ -39,9 +40,9 @@ export default component$(() => {
         <h2>Categories</h2>
         <div class="flex gap-4">
           <button class={categoryClasses} onClick$={() => currentCategory.value = "all"}>All</button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "vanlife"}>Vanlife</button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "tinyhouse"}>Tinyhouse</button>
-          <button class={categoryClasses} onClick$={() => currentCategory.value = "tiny-apartment"}>Tiny Apartments</button>
+          <button class={categoryClasses} onClick$={() => currentCategory.value = "vanlife"}></button>
+          <button class={categoryClasses} onClick$={() => currentCategory.value = "tinyhouse"}><img class="h-16" src={tiny_house} /></button>
+          <button class={categoryClasses} onClick$={() => currentCategory.value = "tiny-apartment"}><img class="h-16" src={apartment} /></button>
           <button class={categoryClasses} onClick$={() => currentCategory.value = "diy"}>Diy</button>
         </div>
         <p class="m-8">Current category is {currentCategory.value}</p>
