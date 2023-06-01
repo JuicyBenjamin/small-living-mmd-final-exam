@@ -277,10 +277,10 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
-    button: {
-      type: "primary",
-      text: "blabla",
-    },
+    button : {
+      type:"secondary",
+      text : "blabla"
+    }
   },
   {
     id: 2,
@@ -340,12 +340,11 @@ export const ArticlesContent = [
         aspectRatio: 1 / 4,
       },
     ],
-    button: {
-      type: "primary",
-      text: "blabla",
-    },
-  },
-  {
+    button : {
+      type:"secondary",
+      text : "blabla"
+    }
+  },{
     id: 3,
     title: "Headline",
     subtitle: "subtitle",
@@ -404,7 +403,7 @@ export const ArticlesContent = [
       },
     ],
     button: {
-      type: "primary",
+      type: "secondary",
       text: "blabla",
     },
   },
@@ -467,8 +466,8 @@ export const ArticlesContent = [
       },
     ],
     button : {
-      type : "primary",
-      text : "lorem"
+      type:"secondary",
+      text : "blabla"
     }
   },
 ];
