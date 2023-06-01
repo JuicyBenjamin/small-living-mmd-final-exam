@@ -21,8 +21,8 @@ export default component$(() => {
           }`}
           class="group items-center grid bg-[url('https://picsum.photos/1200/200')] bg-cover hover:scale-125"
         >
-          <div class="flex absolute w-12 h-12 rounded-full p-2 justify-center bg-black bg-opacity-60 mr-2 right-0">
-            <ArrowIcon left class="fill-white w-6" />
+          <div class="flex absolute w-8 h-8 md:w-12 md:h-12 rounded-full p-2 justify-center bg-black bg-opacity-40 ml-2 left-0">
+            <ArrowIcon left class="fill-white w-8 md:12 place-self-center" />
           </div>
           <div
             class="opacity-0 hover:backdrop-blur-lg h-full w-full group-hover:opacity-100 text-center pl-4 text-[--light-white]"
@@ -49,8 +49,8 @@ export default component$(() => {
           }`}
           class="group items-center grid bg-[url('https://picsum.photos/1300/200')] bg-cover hover:scale-125"
         >
-          <div class="flex absolute ml-2 w-12 h-12 rounded-full p-2 justify-center bg-black bg-opacity-60">
-            <ArrowIcon right class="fill-white w-6" />
+          <div class="flex absolute w-8 h-8 md:w-12 md:h-12 rounded-full p-2 justify-center bg-black bg-opacity-40 mr-2 right-0">
+            <ArrowIcon right class="fill-white w-8 md:12 place-self-center" />
           </div>
           <div
             class="opacity-0 hover:backdrop-blur-lg h-full w-full group-hover:opacity-100 text-center pl-4 text-[--light-white]"

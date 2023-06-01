@@ -24,13 +24,13 @@ export default component$<articleContent>(({ content }) => {
   return (
     <article class={"flex flex-col justify-center"}>
       <div class="grid">
-        <h2 class={"justify-self-center pb-6 pt-16"}>{content.title}</h2>
+        <h2 class={"justify-self-center pb-6 md:pt-16 pt-4"}>{content.title}</h2>
       </div>
       <ThreeArticles></ThreeArticles>
       <Hashtags categories={content.categories}></Hashtags>
-      <div class="mx-auto max-w-[75ch] lg:w-[75ch]">
+      <div class="mx-auto max-w-[75ch] lg:w-[75ch] px-4">
         <section class={"flex justify-between pb-6"}>
-          <div class={"flex gap-2"}>
+          <div class={"flex gap-2 self-center"}>
             <div>{content.date}</div>
             <span> | </span>
             <div>by {content.author}</div>
