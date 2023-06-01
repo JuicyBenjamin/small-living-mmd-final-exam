@@ -11,7 +11,7 @@ export default component$(() => {
   const maxArticle = ArticlesContent.length;
 
   return (
-    <section class="grid grid-cols-[1fr_1fr_repeat(7,2fr)_1fr_1fr] grid-rows-[1fr_5fr_1fr] w-[100vw] h-[65vh]">
+    <section class="grid grid-cols-[1fr_1fr_repeat(7,2fr)_1fr_1fr] grid-rows-[1fr_5fr_1fr] w-[100vw] md:h-[65vh] h-[35vh]">
       <div class="col-start-1 col-end-2 row-start-2 row-end-2 relative grid">
         <Link
           href={`${route.url.origin}/articles/${
