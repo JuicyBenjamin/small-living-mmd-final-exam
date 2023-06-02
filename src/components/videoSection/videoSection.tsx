@@ -8,7 +8,7 @@ export default component$(() => {
       <iframe
         width="315"
         height="560"
-        src="https://www.youtube.com/embed/oUD5SSpbZ4A"
+        src="https://www.youtube.com/embed/bLafH0kUEuc"
         title="Van Life Explainer - Small Living, KEA"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       ></iframe>
