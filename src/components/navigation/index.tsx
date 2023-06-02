@@ -33,7 +33,7 @@ export default component$(() => {
     <ul
         class={`${
           burgerOpen.value ? "max-md:translate-y-0 max-md:opacity-100" : "max-md:-translate-y-full max-md:opacity-0"
-        } hidden w-full absolute md:flex md:flex-row md:justify-center md:gap-12 md:py-12 text-center py-8 transition-all ease-in-out bg-[--accent-green] z-30 h-fit top-0`}
+        } relative w-full md:flex md:flex-row md:justify-center md:gap-12 md:py-12 text-center py-8 transition-all ease-in-out bg-[--accent-green] z-30 h-fit`}
       >
         {navigationContent.map((link, key) => (
           <li key={key}>
